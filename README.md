@@ -13,7 +13,7 @@ npm run dev
 
 Vérifications : `npm run lint`, `npm run typecheck`, `npm run build`.
 
-Le projet Vercel canonique est `namesia`, connecté au dépôt `Nabouna32/Namesia`. L'URL de travail retenue est `https://namesia.vercel.app`. Le projet Vercel redondant `nemesia` est destiné à être supprimé par l'utilisateur ; ne pas le considérer comme la cible du déploiement.
+Déploiement Vercel : [namesia.vercel.app](https://namesia.vercel.app).
 
 ## Documentation canonique
 
