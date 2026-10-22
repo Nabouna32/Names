@@ -3,12 +3,13 @@
 **Mis à jour :** 2026-10-23.
 
 ## Socle
-- Application Next.js App Router, React et TypeScript.
+- Application Next.js App Router, React et TypeScript ; Node.js 24+ requis.
 - Recherche côté client sur quelques exemples locaux.
 - Projet Supabase créé, sans intégration applicative ni migration de schéma.
 - Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
-- Dépendances verrouillées dans `package-lock.json`; la CI installe via `npm ci`.
-- CI GitHub : lint, TypeScript et build de production uniquement sur les PR vers `main` ; les exécutions obsolètes en cours sont annulées.
+- Dépendances verrouillées dans `package-lock.json` ; installation CI reproductible via `npm ci`.
+- CI GitHub sur les PR vers `main` : audit npm (seuil high), lint, TypeScript et build ; exécutions obsolètes annulées.
+- Dependabot surveille chaque semaine les dépendances npm et les actions GitHub.
 - Vercel Preview désactivé volontairement ; seule `main` déploie en production, pour préserver le quota de 100 déploiements par jour.
 
 ## Limites actuelles
