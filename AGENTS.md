@@ -34,6 +34,8 @@ La documentation fait partie du produit et doit évoluer avec le code, dans la m
 - `docs/STATUS.md` : état vérifié, limites connues, contrôles effectués et prochaines étapes.
 - `README.md` : présentation et instructions utiles pour démarrer.
 Ajouter un document uniquement s'il apporte une source canonique utile. Supprimer ou fusionner les éléments devenus obsolètes ou redondants. Distinguer explicitement l'existant, le prévu et les hypothèses ; ne pas documenter une intention comme une capacité livrée.
+- **Concision obligatoire :** documenter l'état actuel et les décisions encore utiles, pas le récit des conversations ou des opérations. Une fois un sujet résolu, supprimer les mentions devenues inutiles. Chaque information doit avoir une seule place canonique ; éviter les répétitions et les détails sans valeur pour développer, maintenir ou utiliser le projet.
+- Garder les documents proportionnés au projet : ajouter une section ou un fichier seulement si cela apporte une information durable et actionnable.
 
 ## Principes d'ingénierie
 - Garder l'architecture proportionnée au besoin ; éviter la complexité prématurée.
