@@ -21,10 +21,9 @@ Le navigateur filtre des exemples statiques intégrés au code. Ces exemples son
 
 Cette cible reste révisable. Ne pas introduire de cache, moteur de recherche spécialisé, système d'authentification ou service IA dans le site avant d'avoir validé un besoin concret.
 
-## Environnement et URL
-- Projet Vercel : `namesia`, connecté au dépôt GitHub `Nabouna32/Namesia` selon l'état initial observé.
-- URL de travail souhaitée pendant le développement : `https://nemesia.vercel.app`. Son association effective au projet Vercel reste à vérifier ; ne pas supposer qu'elle est configurée ou disponible.
-- L'URL ne change pas la marque : le nom affiché du produit est **Namesia**.
+## Environnement
+- Dépôt : `Nabouna32/Namesia`.
+- Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
 - Le prototype ne nécessite aucune variable d'environnement. À l'intégration de Supabase, documenter les noms requis dans `.env.example`. Les secrets ne doivent jamais être accessibles au navigateur.
 
 ## À réévaluer avant implémentation

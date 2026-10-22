@@ -15,6 +15,11 @@ Pour chaque tâche significative, repartir de la page blanche avant d'implément
 
 Le challenge transversal est obligatoire : considérer produit, UX, modèle éditorial et données, sécurité, SEO, accessibilité, performance, coûts et maintenance selon la pertinence. Ne pas inventer des problèmes pour le principe ni multiplier les options équivalentes.
 
+## Style des réponses
+- Rendre les réponses faciles à parcourir : titres courts, listes et mise en évidence seulement quand cela aide.
+- Utiliser quelques emojis pertinents comme repères visuels pour signaler les points clés, actions, avertissements ou résultats, afin que l'utilisateur puisse comprendre l'essentiel en survolant.
+- Rester sobre : pas d'emojis décoratifs à chaque ligne, pas d'accumulation ni de remplacement d'informations claires par des symboles. Adapter le format à la demande et au contexte.
+
 ## Git et pull requests — règle stricte
 - **Ne jamais modifier directement `main`.** Toute modification passe par une branche dédiée et une pull request (PR) vers `main`.
 - Créer une branche courte et descriptive pour chaque unité de changement cohérente.
@@ -34,6 +39,8 @@ La documentation fait partie du produit et doit évoluer avec le code, dans la m
 - `docs/STATUS.md` : état vérifié, limites connues, contrôles effectués et prochaines étapes.
 - `README.md` : présentation et instructions utiles pour démarrer.
 Ajouter un document uniquement s'il apporte une source canonique utile. Supprimer ou fusionner les éléments devenus obsolètes ou redondants. Distinguer explicitement l'existant, le prévu et les hypothèses ; ne pas documenter une intention comme une capacité livrée.
+- **Concision obligatoire :** documenter l'état actuel et les décisions encore utiles, pas le récit des conversations ou des opérations. Une fois un sujet résolu, supprimer les mentions devenues inutiles. Chaque information doit avoir une seule place canonique ; éviter les répétitions et les détails sans valeur pour développer, maintenir ou utiliser le projet.
+- Garder les documents proportionnés au projet : ajouter une section ou un fichier seulement si cela apporte une information durable et actionnable.
 
 ## Principes d'ingénierie
 - Garder l'architecture proportionnée au besoin ; éviter la complexité prématurée.
