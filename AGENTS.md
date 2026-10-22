@@ -21,6 +21,9 @@ Le challenge transversal est obligatoire : considérer produit, UX, modèle édi
 - La PR explique le problème, la proposition retenue, les alternatives ou compromis importants, les fichiers touchés et les vérifications effectuées.
 - Examiner les changements et les résultats de vérification avant de proposer la fusion. Ne pas fusionner ni déclarer une PR validée sans autorisation explicite de l'utilisateur.
 - Si une opération ou un outil ne permet pas de travailler hors de `main`, s'arrêter avant d'écrire et proposer une voie compatible.
+- Après chaque changement, lancer ou déclencher les contrôles pertinents : lint, TypeScript, build et tests disponibles. Le build Vercel ne remplace pas un lint et un typecheck indépendants si ces scripts existent.
+- Si un contrôle échoue, lire les logs, corriger le problème sur la même branche/PR, relancer les contrôles et recommencer jusqu'à réussite ou blocage réel. Ne jamais laisser un échec connu sans le signaler.
+- Une PR doit être fusionnée après vérification du diff et lorsque les contrôles requis sont verts. L'utilisateur a demandé une fusion systématique après correction et validation ; ne pas laisser une PR terminée ouverte inutilement. Si un blocage de permissions, de conflit ou de CI empêche la fusion, l'expliquer clairement et ne pas contourner une protection.
 - Ne jamais prétendre qu'un test, un build, une revue ou un déploiement a réussi sans résultat observé.
 
 ## Documentation canonique
@@ -42,7 +45,7 @@ Ajouter un document uniquement s'il apporte une source canonique utile. Supprime
 - Ne jamais exposer une clé secrète ou `service_role` côté navigateur ou dans une variable `NEXT_PUBLIC_`.
 
 ## Vérification
-Après les changements pertinents, lancer lint, contrôle TypeScript et build. Vérifier également le parcours touché et l'aperçu de déploiement lorsque possible. Si l'environnement ne permet pas un contrôle, le signaler sans le présenter comme réussi.
+Après chaque changement pertinent, exécuter `npm run lint`, `npm run typecheck` et `npm run build`, ainsi que les tests disponibles et une vérification du parcours touché. Ajouter une CI GitHub Actions pour exécuter ces contrôles sur les pull requests. Si un contrôle échoue, inspecter les logs, corriger dans la même branche, puis relancer. Ne pas fusionner tant que les contrôles échouent, sauf impossibilité externe documentée ; dans ce cas, laisser la PR ouverte et expliquer le blocage. Une fois la PR validée et les contrôles verts, la fusionner conformément à la demande de l'utilisateur. Si l'environnement ne permet pas un contrôle local, le dire et s'appuyer sur une CI observée, sans présenter un contrôle non exécuté comme réussi.
 
 ## Questions de challenge
 - Le besoin réel est-il bien identifié ?
