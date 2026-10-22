@@ -2,7 +2,25 @@
   "name": "namesia",
   "version": "0.1.0",
   "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "eslint .", "typecheck": "tsc --noEmit" },
-  "dependencies": { "next": "15.5.28", "react": "19.1.1", "react-dom": "19.1.1" },
-  "devDependencies": { "@eslint/eslintrc": "^3.3.1", "@types/node": "^22.18.6", "@types/react": "^19.1.13", "@types/react-dom": "^19.1.9", "eslint": "^9.35.0", "eslint-config-next": "15.5.28", "typescript": "^5.9.2" }
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.10.0",
+    "eslint-config-next": "16.4.2",
+    "typescript": "7.0.2"
+  }
 }
