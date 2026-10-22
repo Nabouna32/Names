@@ -26,7 +26,7 @@ Le challenge transversal est obligatoire : considérer produit, UX, modèle édi
 - La PR explique le problème, la proposition retenue, les alternatives ou compromis importants, les fichiers touchés et les vérifications effectuées.
 - Examiner le diff et les contrôles avant fusion. Ne pas contourner une protection de branche ni fusionner avec des contrôles requis en échec.
 - Après chaque changement pertinent, exécuter `npm run lint`, `npm run typecheck`, `npm run build` et les tests disponibles ; inspecter les logs et corriger tout échec.
-- **Auto-merge : usage conditionnel, pas automatique par défaut.** Pour une PR à faible risque, l'auto-merge peut être activé après revue du diff et approbation explicite de l'utilisateur, à condition que les contrôles requis soient configurés comme protections GitHub et que tous soient verts. GitHub peut alors fusionner dès que les conditions sont satisfaites. Pour un changement structurel, une migration de données, de sécurité, de secrets ou de déploiement, garder une validation humaine explicite au moment de la fusion. Si les protections ou les contrôles requis ne sont pas confirmés, ne pas utiliser l'auto-merge.
+- **Fusion :** terminer et regrouper le périmètre cohérent de la PR, puis relire le diff complet et vérifier les contrôles avant de décider de fusionner. L'auto-merge n'est pas activé par défaut ; il n'est envisageable pour une PR à faible risque qu'après approbation explicite de l'utilisateur et si GitHub impose réellement les contrôles requis. Pour les changements structurels, de données, de sécurité, de secrets ou de déploiement, demander une décision humaine explicite au moment de la fusion. Ne pas fusionner si un contrôle requis échoue ou si les protections ne sont pas confirmées.
 - Ne pas laisser une PR validée inutilement ouverte si l'utilisateur a autorisé sa fusion. Si une permission, une protection, un conflit ou un contrôle bloque l'opération, expliquer le blocage sans le contourner.
 - Ne jamais prétendre qu'un test, une revue ou un déploiement a réussi sans résultat observé.
 
@@ -51,7 +51,7 @@ Ajouter un document uniquement s'il apporte une source canonique utile. Supprime
 - Ne jamais exposer une clé secrète ou `service_role` côté navigateur ou dans une variable `NEXT_PUBLIC_`.
 
 ## Vérification
-La CI GitHub Actions doit exécuter lint, TypeScript et build sur les pull requests. Le déploiement Vercel de production est déclenché par `main` uniquement ; les previews sont désactivés pour limiter la consommation du quota de déploiements. Une preview n'est donc pas un prérequis de fusion. Si l'environnement ne permet pas un contrôle local, le dire et s'appuyer sur une CI observée, sans présenter un contrôle non exécuté comme réussi.
+La CI GitHub Actions exécute lint, TypeScript et build uniquement sur les pull requests vers `main`, en annulant les exécutions obsolètes encore en cours. Le déploiement Vercel de production est déclenché par `main` uniquement ; les previews sont désactivés pour limiter la consommation du quota de déploiements. Une preview n'est donc pas un prérequis de fusion. Si l'environnement ne permet pas un contrôle local, le dire et s'appuyer sur une CI observée, sans présenter un contrôle non exécuté comme réussi.
 
 ## Questions de challenge
 - Le besoin réel est-il bien identifié ?
