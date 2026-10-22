@@ -29,6 +29,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Preserve generated lockfile for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: namesia-package-lock
+          path: package-lock.json
+          if-no-files-found: error
+          retention-days: 3
+
       - name: Lint
         run: npm run lint
 
