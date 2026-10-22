@@ -8,9 +8,10 @@
 - Projet Supabase créé, sans intégration applicative ni migration de schéma.
 - Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
 - Dépendances verrouillées dans `package-lock.json` ; installation CI reproductible via `npm ci`.
-- CI GitHub sur les PR vers `main` : audit bloquant des dépendances de production, audit complet visible, lint, TypeScript et build.
-- L'audit complet signale actuellement `braces@3.0.3`, dépendance de développement transitive sans version corrigée publiée ; ce constat reste visible et doit être réévalué lorsqu'un correctif amont existe.
-- Dependabot surveille chaque semaine les dépendances npm et les actions GitHub.
+- CI sur les PR vers `main` : installation, lint, TypeScript et build. Aucun audit de vulnérabilités dans ce contrôle PR.
+- Audit de sécurité séparé chaque lundi à 08:17 UTC, sur les dépendances de production et de développement ; déclenchement manuel possible.
+- Dependabot vérifie chaque semaine les dépendances npm et les actions GitHub, en couvrant les mises à jour majeures, mineures et correctives.
+- L'audit complet a signalé `braces@3.0.3`, dépendance transitive de développement sans correctif amont connu au moment du dernier audit ; le rapport hebdomadaire permet de détecter l'arrivée d'un correctif.
 - Vercel Preview désactivé volontairement ; seule `main` déploie en production, pour préserver le quota de 100 déploiements par jour.
 
 ## Limites actuelles
