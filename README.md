@@ -4,10 +4,10 @@ Namesia est un site de découverte des prénoms : explorer leurs origines, signi
 
 ## Développement
 
-Prérequis : Node.js 20.9+ et npm.
+Prérequis : Node.js 24+ et npm.
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
