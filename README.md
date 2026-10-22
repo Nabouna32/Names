@@ -13,7 +13,7 @@ npm run dev
 
 Vérifications : `npm run lint`, `npm run typecheck`, `npm run build`.
 
-L'URL souhaitée pendant le développement est `https://nemesia.vercel.app`. La marque affichée reste **Namesia** ; la configuration effective du domaine doit être vérifiée dans Vercel.
+Le projet Vercel canonique est `namesia`, connecté au dépôt `Nabouna32/Namesia`. L'URL de travail retenue est `https://namesia.vercel.app`. Le projet Vercel redondant `nemesia` est destiné à être supprimé par l'utilisateur ; ne pas le considérer comme la cible du déploiement.
 
 ## Documentation canonique
 
