@@ -17,11 +17,14 @@ Ne conserver ici que les décisions structurantes encore utiles. Les détails d'
 ## D-005 — Namesia est un site éditorial de découverte des prénoms, pas un produit IA
 **Statut : direction produit adoptée.** L'IA peut aider à produire ou structurer les fiches en coulisses, mais le site ne propose pas d'assistant IA aux visiteurs.
 
-## D-006 — Déploiement Vercel
-**Statut : adopté.** Le projet Vercel de référence est `namesia`, à l'adresse `https://namesia.vercel.app`.
+## D-006 — Déploiement Vercel limité à main
+**Statut : adopté.** Le projet de référence est `namesia` — [namesia.vercel.app](https://namesia.vercel.app). Seule la branche `main` déploie en production ; les déploiements Preview sont désactivés pour préserver le quota de 100 déploiements par jour. La CI GitHub sur les PR remplace les previews comme contrôle automatisé avant fusion ; une preview n'est pas une condition de fusion.
 
 ## D-007 — Toute modification passe par une PR
-**Statut : règle de travail adoptée.** Ne pas écrire directement sur `main`. Créer une branche dédiée, vérifier les changements et contrôles avant fusion.
+**Statut : règle de travail adoptée.** Ne pas écrire directement sur `main`. Créer une branche dédiée, examiner le diff et vérifier les contrôles avant fusion.
 
 ## D-008 — Challenge avant implémentation
 **Statut : règle de travail adoptée.** Repartir du besoin réel, comparer les options pertinentes et privilégier la solution la plus simple qui répond au besoin. Challenger sans créer de débats inutiles.
+
+## D-009 — Auto-merge conditionnel
+**Statut : recommandé sous conditions.** L'auto-merge est utile pour les PR à faible risque lorsqu'une revue humaine a approuvé le diff et que GitHub impose réellement tous les contrôles requis avant fusion. Il réduit l'attente sans supprimer les garde-fous. Ne pas l'activer par défaut pour les changements structurels, migrations, sécurité, secrets ou configuration de déploiement ; exiger alors une décision humaine explicite de fusion. Si les règles de protection et les contrôles requis ne sont pas confirmés, fusion manuelle après vérification.
