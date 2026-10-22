@@ -7,12 +7,12 @@
 - Recherche côté client sur quelques exemples locaux.
 - Projet Supabase créé, sans intégration applicative ni migration de schéma.
 - Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
+- Dépendances verrouillées dans `package-lock.json`; la CI installe via `npm ci`.
 
 ## Limites actuelles
 - Les exemples locaux ne constituent pas un catalogue éditorial vérifié.
 - Pas de schéma Supabase, de provenance éditoriale structurée ni de processus de vérification/publication.
 - Pas de tests de parcours documentés.
-- Le dépôt ne contient pas encore de `package-lock.json` ; l'installation CI n'est donc pas encore reproductible avec `npm ci`.
 
 ## Prochaines étapes
 1. Prioriser les parcours et le périmètre de la fiche de prénom.
