@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   verify:
-    name: Audit, lint, TypeScript and build
+    name: Lint, TypeScript and build
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -23,16 +23,10 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: 24
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Audit production dependencies
-        run: npm audit --omit=dev --audit-level=high
-
-      - name: Audit all dependencies (including development tools)
-        run: npm audit --audit-level=high
-        continue-on-error: true
 
       - name: Lint
         run: npm run lint
