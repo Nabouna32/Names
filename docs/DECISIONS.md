@@ -30,4 +30,7 @@ Ne conserver ici que les décisions structurantes encore utiles. Les détails d'
 **Statut : adopté.** Regrouper le périmètre cohérent, relire le diff complet et vérifier les contrôles avant de décider de fusionner. Pas d'auto-merge par défaut ; l'envisager uniquement pour une PR à faible risque après approbation explicite et si GitHub impose réellement les contrôles requis. Pour les changements structurels, de données, de sécurité ou de déploiement, décision humaine explicite au moment de la fusion.
 
 ## D-010 — Versions du socle et compatibilité TypeScript
-**Statut : adopté.** Utiliser Node.js 24 et les versions stables compatibles les plus récentes de Next.js, React, ESLint et leurs types. Garder TypeScript 6 tant que `@typescript-eslint/parser` déclare une compatibilité `<6.1.0` ; ne pas adopter TypeScript 7 avant prise en charge officielle par la chaîne de lint.
+**Statut : adopté.** Utiliser Node.js 24 et les versions stables compatibles les plus récentes de Next.js, React et leurs types. Garder TypeScript 6 tant que `@typescript-eslint/parser` déclare une compatibilité `<6.1.0` ; ne pas adopter TypeScript 7 avant prise en charge officielle par la chaîne de lint.
+
+## D-011 — Vulnérabilité transitive non corrigée dans l'outillage
+**Statut : suivi.** `braces@3.0.3` est signalé par GHSA-vfj7-8cjw-p6xm et transite par l'outillage de lint. Aucun correctif amont n'est publié à ce jour. L'audit de production reste bloquant ; l'audit complet reste visible sans bloquer le reste de la CI pour ce constat non corrigeable, à réévaluer dès publication d'un correctif.
