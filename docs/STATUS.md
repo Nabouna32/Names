@@ -8,7 +8,7 @@
 - Projet Supabase créé, sans intégration applicative ni migration de schéma.
 - Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
 - Dépendances verrouillées dans `package-lock.json`; la CI installe via `npm ci`.
-- CI GitHub : lint, TypeScript et build de production sur les PR.
+- CI GitHub : lint, TypeScript et build de production uniquement sur les PR vers `main` ; les exécutions obsolètes en cours sont annulées.
 - Vercel Preview désactivé volontairement ; seule `main` déploie en production, pour préserver le quota de 100 déploiements par jour.
 
 ## Limites actuelles
