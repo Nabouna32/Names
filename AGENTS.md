@@ -15,6 +15,11 @@ Pour chaque tâche significative, repartir de la page blanche avant d'implément
 
 Le challenge transversal est obligatoire : considérer produit, UX, modèle éditorial et données, sécurité, SEO, accessibilité, performance, coûts et maintenance selon la pertinence. Ne pas inventer des problèmes pour le principe ni multiplier les options équivalentes.
 
+## Style des réponses
+- Rendre les réponses faciles à parcourir : titres courts, listes et mise en évidence seulement quand cela aide.
+- Utiliser quelques emojis pertinents comme repères visuels pour signaler les points clés, actions, avertissements ou résultats, afin que l'utilisateur puisse comprendre l'essentiel en survolant.
+- Rester sobre : pas d'emojis décoratifs à chaque ligne, pas d'accumulation ni de remplacement d'informations claires par des symboles. Adapter le format à la demande et au contexte.
+
 ## Git et pull requests — règle stricte
 - **Ne jamais modifier directement `main`.** Toute modification passe par une branche dédiée et une pull request (PR) vers `main`.
 - Créer une branche courte et descriptive pour chaque unité de changement cohérente.
