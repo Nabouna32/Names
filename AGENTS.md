@@ -17,19 +17,18 @@ Le challenge transversal est obligatoire : considérer produit, UX, modèle édi
 
 ## Style des réponses
 - Rendre les réponses faciles à parcourir : titres courts, listes et mise en évidence seulement quand cela aide.
-- Utiliser quelques emojis pertinents comme repères visuels pour signaler les points clés, actions, avertissements ou résultats, afin que l'utilisateur puisse comprendre l'essentiel en survolant.
-- Rester sobre : pas d'emojis décoratifs à chaque ligne, pas d'accumulation ni de remplacement d'informations claires par des symboles. Adapter le format à la demande et au contexte.
+- Utiliser quelques emojis pertinents comme repères visuels, sans accumulation.
+- Rester sobre et adapter le format à la demande et au contexte.
 
-## Git et pull requests — règle stricte
+## Git et pull requests
 - **Ne jamais modifier directement `main`.** Toute modification passe par une branche dédiée et une pull request (PR) vers `main`.
 - Créer une branche courte et descriptive pour chaque unité de changement cohérente.
 - La PR explique le problème, la proposition retenue, les alternatives ou compromis importants, les fichiers touchés et les vérifications effectuées.
-- Examiner les changements et les résultats de vérification avant de proposer la fusion. Ne pas fusionner ni déclarer une PR validée sans autorisation explicite de l'utilisateur.
-- Si une opération ou un outil ne permet pas de travailler hors de `main`, s'arrêter avant d'écrire et proposer une voie compatible.
-- Après chaque changement, lancer ou déclencher les contrôles pertinents : lint, TypeScript, build et tests disponibles. Le build Vercel ne remplace pas un lint et un typecheck indépendants si ces scripts existent.
-- Si un contrôle échoue, lire les logs, corriger le problème sur la même branche/PR, relancer les contrôles et recommencer jusqu'à réussite ou blocage réel. Ne jamais laisser un échec connu sans le signaler.
-- Une PR doit être fusionnée après vérification du diff et lorsque les contrôles requis sont verts. L'utilisateur a demandé une fusion systématique après correction et validation ; ne pas laisser une PR terminée ouverte inutilement. Si un blocage de permissions, de conflit ou de CI empêche la fusion, l'expliquer clairement et ne pas contourner une protection.
-- Ne jamais prétendre qu'un test, un build, une revue ou un déploiement a réussi sans résultat observé.
+- Examiner le diff et les contrôles avant fusion. Ne pas contourner une protection de branche ni fusionner avec des contrôles requis en échec.
+- Après chaque changement pertinent, exécuter `npm run lint`, `npm run typecheck`, `npm run build` et les tests disponibles ; inspecter les logs et corriger tout échec.
+- **Auto-merge : usage conditionnel, pas automatique par défaut.** Pour une PR à faible risque, l'auto-merge peut être activé après revue du diff et approbation explicite de l'utilisateur, à condition que les contrôles requis soient configurés comme protections GitHub et que tous soient verts. GitHub peut alors fusionner dès que les conditions sont satisfaites. Pour un changement structurel, une migration de données, de sécurité, de secrets ou de déploiement, garder une validation humaine explicite au moment de la fusion. Si les protections ou les contrôles requis ne sont pas confirmés, ne pas utiliser l'auto-merge.
+- Ne pas laisser une PR validée inutilement ouverte si l'utilisateur a autorisé sa fusion. Si une permission, une protection, un conflit ou un contrôle bloque l'opération, expliquer le blocage sans le contourner.
+- Ne jamais prétendre qu'un test, une revue ou un déploiement a réussi sans résultat observé.
 
 ## Documentation canonique
 La documentation fait partie du produit et doit évoluer avec le code, dans la même PR :
@@ -38,9 +37,9 @@ La documentation fait partie du produit et doit évoluer avec le code, dans la m
 - `docs/DECISIONS.md` : décisions structurantes, raisons, alternatives et statut.
 - `docs/STATUS.md` : état vérifié, limites connues, contrôles effectués et prochaines étapes.
 - `README.md` : présentation et instructions utiles pour démarrer.
-Ajouter un document uniquement s'il apporte une source canonique utile. Supprimer ou fusionner les éléments devenus obsolètes ou redondants. Distinguer explicitement l'existant, le prévu et les hypothèses ; ne pas documenter une intention comme une capacité livrée.
-- **Concision obligatoire :** documenter l'état actuel et les décisions encore utiles, pas le récit des conversations ou des opérations. Une fois un sujet résolu, supprimer les mentions devenues inutiles. Chaque information doit avoir une seule place canonique ; éviter les répétitions et les détails sans valeur pour développer, maintenir ou utiliser le projet.
-- Garder les documents proportionnés au projet : ajouter une section ou un fichier seulement si cela apporte une information durable et actionnable.
+Ajouter un document uniquement s'il apporte une source canonique utile. Supprimer ou fusionner les éléments devenus obsolètes ou redondants. Distinguer explicitement l'existant, le prévu et les hypothèses.
+- **Concision obligatoire :** documenter l'état actuel et les décisions encore utiles, pas le récit des conversations ou des opérations. Chaque information doit avoir une seule place canonique ; éviter les répétitions et les détails sans valeur durable.
+- Garder les documents proportionnés au projet.
 
 ## Principes d'ingénierie
 - Garder l'architecture proportionnée au besoin ; éviter la complexité prématurée.
@@ -52,7 +51,7 @@ Ajouter un document uniquement s'il apporte une source canonique utile. Supprime
 - Ne jamais exposer une clé secrète ou `service_role` côté navigateur ou dans une variable `NEXT_PUBLIC_`.
 
 ## Vérification
-Après chaque changement pertinent, exécuter `npm run lint`, `npm run typecheck` et `npm run build`, ainsi que les tests disponibles et une vérification du parcours touché. Ajouter une CI GitHub Actions pour exécuter ces contrôles sur les pull requests. Si un contrôle échoue, inspecter les logs, corriger dans la même branche, puis relancer. Ne pas fusionner tant que les contrôles échouent, sauf impossibilité externe documentée ; dans ce cas, laisser la PR ouverte et expliquer le blocage. Une fois la PR validée et les contrôles verts, la fusionner conformément à la demande de l'utilisateur. Si l'environnement ne permet pas un contrôle local, le dire et s'appuyer sur une CI observée, sans présenter un contrôle non exécuté comme réussi.
+La CI GitHub Actions doit exécuter lint, TypeScript et build sur les pull requests. Le déploiement Vercel de production est déclenché par `main` uniquement ; les previews sont désactivés pour limiter la consommation du quota de déploiements. Une preview n'est donc pas un prérequis de fusion. Si l'environnement ne permet pas un contrôle local, le dire et s'appuyer sur une CI observée, sans présenter un contrôle non exécuté comme réussi.
 
 ## Questions de challenge
 - Le besoin réel est-il bien identifié ?
