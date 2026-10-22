@@ -32,5 +32,5 @@ Ne conserver ici que les décisions structurantes encore utiles. Les détails d'
 ## D-010 — Versions du socle et compatibilité TypeScript
 **Statut : adopté.** Utiliser Node.js 24 et les versions stables compatibles les plus récentes de Next.js, React et leurs types. Garder TypeScript 6 tant que `@typescript-eslint/parser` déclare une compatibilité `<6.1.0` ; ne pas adopter TypeScript 7 avant prise en charge officielle par la chaîne de lint.
 
-## D-011 — Vulnérabilité transitive non corrigée dans l'outillage
-**Statut : suivi.** `braces@3.0.3` est signalé par GHSA-vfj7-8cjw-p6xm et transite par l'outillage de lint. Aucun correctif amont n'est publié à ce jour. L'audit de production reste bloquant ; l'audit complet reste visible sans bloquer le reste de la CI pour ce constat non corrigeable, à réévaluer dès publication d'un correctif.
+## D-011 — Mises à jour et audit de sécurité séparés de la CI des PR
+**Statut : adopté.** Dependabot vérifie chaque semaine toutes les dépendances npm et GitHub Actions, y compris les mises à jour majeures, mineures et correctives ; les majeures sont regroupées séparément des mineures/correctives pour faciliter le diagnostic. L'audit npm complet s'exécute dans un workflow hebdomadaire distinct, également lançable manuellement, et ne bloque pas les vérifications ordinaires des PR. Les vulnérabilités détectées doivent être examinées et corrigées lorsque c'est possible ; une mise à jour n'est pas appliquée aveuglément si elle casse la compatibilité.
