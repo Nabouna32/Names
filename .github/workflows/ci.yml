@@ -7,7 +7,7 @@ on:
     branches: ['**']
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
@@ -27,17 +27,7 @@ jobs:
           node-version: 24
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Commit generated lockfile
-        run: |
-          if [ -n "$(git status --porcelain -- package-lock.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add package-lock.json
-            git commit -m "chore: add npm lockfile"
-            git push
-          fi
+        run: npm ci
 
       - name: Lint
         run: npm run lint
