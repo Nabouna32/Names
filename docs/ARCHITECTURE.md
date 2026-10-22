@@ -16,14 +16,16 @@ Le navigateur filtre des exemples statiques intégrés au code. Ces exemples son
 - Next.js pour l'interface, les routes et le rendu.
 - Supabase/Postgres pour les données métier, avec migrations versionnées lorsque le schéma sera défini.
 - Accès serveur par défaut et exposition publique minimale ; politiques RLS adaptées si et là où elles sont nécessaires.
-- Vercel pour les déploiements reliés à GitHub.
+- Vercel pour les déploiements reliés à GitHub ; seule la branche `main` déploie en production. Les déploiements Preview sont désactivés pour maîtriser le quota quotidien.
 - Un modèle de contenu qui permet de conserver la provenance et les nuances des affirmations éditoriales.
 
 Cette cible reste révisable. Ne pas introduire de cache, moteur de recherche spécialisé, système d'authentification ou service IA dans le site avant d'avoir validé un besoin concret.
 
-## Environnement
+## Environnement et livraison
 - Dépôt : `Nabouna32/Namesia`.
 - Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
+- CI GitHub sur les PR : installation reproductible avec `npm ci`, lint, vérification TypeScript et build de production.
+- Les previews Vercel ne sont pas disponibles volontairement ; la CI est le contrôle automatisé pré-fusion. La production se met à jour depuis `main`.
 - Le prototype ne nécessite aucune variable d'environnement. À l'intégration de Supabase, documenter les noms requis dans `.env.example`. Les secrets ne doivent jamais être accessibles au navigateur.
 
 ## À réévaluer avant implémentation
