@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable react/no-unescaped-entities -- French editorial copy uses natural apostrophes throughout JSX text. */
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 type ElementKey = "feu" | "eau" | "air" | "terre" | "cosmos";
