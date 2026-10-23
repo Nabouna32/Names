@@ -1,10 +1,10 @@
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 import type { Metadata } from "next";
-import { Dancing_Script } from "next/font/google";
+import { Satisfy } from "next/font/google";
 import { notFound } from "next/navigation";
 
-const nameScript = Dancing_Script({ subsets: ["latin"], weight: ["500", "600", "700"], display: "swap" });
+const nameScript = Satisfy({ subsets: ["latin"], weight: ["400"], display: "swap" });
 
 type DemoName = {
   name: string;
