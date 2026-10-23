@@ -2,47 +2,32 @@
 
 Ne conserver que les décisions structurantes encore utiles.
 
-## D-001 — Next.js App Router, React, TypeScript
-**Statut : adopté.** Socle pour le rendu, le SEO et Vercel.
+## D-001 — Socle applicatif
+**Adopté :** Next.js App Router, React et TypeScript strict, déployés sur Vercel.
 
-## D-002 — CSS natif au départ
-**Statut : adopté pour le prototype.** Éviter une bibliothèque UI avant d'en avoir besoin.
+## D-002 — CSS natif
+**Adopté :** ne pas ajouter de bibliothèque UI sans bénéfice démontré.
 
-## D-003 — Supabase comme base prévue
-**Statut : prévu, non intégré.** Définir les relations, la provenance et le modèle éditorial avant la migration.
+## D-003 — Supabase
+**Prévu, non intégré :** concevoir le modèle éditorial et la provenance avant les migrations.
 
-## D-004 — Les données de démonstration ne sont pas des données éditoriales
-**Statut : adopté.** Les exemples locaux servent à visualiser l'expérience et ne doivent pas être présentés comme vérifiés.
+## D-004 — Données de démonstration
+**Adopté :** les exemples locaux ne constituent pas un catalogue vérifié ; les statistiques inventées doivent rester explicitement identifiées comme fictives.
 
-## D-005 — Univers factuel et symbolique
-**Statut : direction produit adoptée.** Viser un équilibre approximatif entre histoire/faits culturels et symbolisme poétique. Le site n'est pas un assistant IA.
+## D-005 — Deux registres éditoriaux
+**Adopté :** le factuel est précis, nuancé et sourcé lorsque possible ; le symbolique est chaleureux, visuel et ludique. Les associations créatives ne sont pas présentées comme des faits ou des prédictions.
 
-## D-006 — Direction visuelle immersive et éditoriale
-**Statut : direction visuelle adoptée, à affiner par retours.** Palette irisée, vignettes colorées, emojis comme repères, roue des éléments et thèmes clair/sombre. Les fiches utilisent des panneaux arrondis cohérents sans encadrer chaque paragraphe. L’interface publique évite les libellés de brouillon et communique les limites des données avec des formulations éditoriales précises.
+## D-006 — Découverte mixte
+**Adopté :** recherche accessible au premier plan, complétée par des parcours d’exploration. La roue symbolique reste révisable selon sa valeur d’usage.
 
-## D-007 — Symbolisme et roue des éléments
-**Statut : concept adopté, associations à éditer.** Les symboles sont des interprétations créatives personnalisées ; les éléments sont une taxonomie de découverte, pas des vérités objectives.
+## D-007 — Périmètre initial
+**Adopté :** pas de comptes, favoris ni comparaison dans la première étape. Priorité à la recherche, aux fiches et à la qualité éditoriale.
 
-## D-008 — Personnalités
-**Statut : adopté.** Maximum 8 par prénom, sélection variée si pertinente, avec profession et domaine détaillés et vérifiables.
+## D-008 — Personnalités et statistiques
+**Adopté :** jusqu’à 8 personnalités pertinentes par prénom, vérifiables et contextualisées. Les statistiques doivent être sourcées et préciser période/périmètre ; aucune donnée officielle ne doit être inventée.
 
-## D-009 — Statistiques de popularité
-**Statut : prévu.** Chiffres clés, courbe interactive et tableau avec source/périmètre ; ne jamais inventer de chiffres INSEE.
+## D-009 — Git et fusion
+**Adopté :** branche dédiée et PR pour chaque changement ; aucune modification directe de main ni fusion sans approbation explicite de l’utilisateur.
 
-## D-010 — Git et déploiement
-**Statut : adopté.** Toute modification passe par une branche et une PR ; pas de modification directe de main. Vercel Preview est désactivé. Ne pas fusionner sans approbation explicite.
-
-## D-011 — Challenge avant implémentation
-**Statut : règle de travail adoptée.** Repartir du besoin, comparer les options utiles et valider les choix structurels sans surcharger la discussion.
-
-## D-012 — Langue de la documentation et du code
-**Statut : décision adoptée ; harmonisation documentaire à planifier.** La documentation du projet, y compris `AGENTS.md`, le `README.md` et les documents canoniques, doit être rédigée en français. Les conventions de code restent en anglais : noms de composants, variables, fonctions, types et identifiants techniques. Garder les commandes, API et termes techniques exacts lorsqu'une traduction nuirait à leur précision. Le chantier complet est suivi dans [l'issue #8](https://github.com/Nabouna32/Namesia/issues/8) et sera traité après la résolution des problèmes de dépendances/CI en cours.
-
-## D-013 — Footer éditorial partagé
-**Statut : adopté.** Le layout racine rend un composant de footer commun à toutes les pages. Il réunit identité de marque, navigation vers des sections existantes et copyright dynamique ; ne pas afficher de liens légaux inactifs ni assimiler le copyright à une conformité juridique.
-
-## D-014 — Typographie signature des fiches prénom
-**Statut : adopté.** Utiliser `Dancing Script` uniquement pour le prénom principal. La famille de police doit être appliquée explicitement via une variable CSS sur le titre : la règle générique `.profile-hero h1` définit une police avec le raccourci `font` et peut écraser la famille fournie par `next/font`. Les autres titres et textes gardent la typographie de lecture ; vérifier les prénoms longs et les tailles mobiles.
-
-## D-015 — Conventions communes de mise en page
-**Statut : adopté.** Le layout racine rend le header global et le footer. Sur les fiches prénom, le fil d’Ariane se trouve dans le bloc de présentation ; une barre sticky opaque distincte contient uniquement les ancres, stylisées en pastilles, avec état actif, défilement mobile et décalage des sections. La barre reste limitée à la fiche pour ne pas couvrir le footer ; aucune dépendance UI n’est nécessaire.
+## D-010 — Documentation et code
+**Adopté :** documentation du projet en français ; identifiants de code en anglais. Les documents canoniques restent concis, cohérents et distinguent l’existant du prévu.

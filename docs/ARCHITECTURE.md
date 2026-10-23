@@ -2,30 +2,26 @@
 
 **Mis à jour :** 2026-10-23.
 
-## État actuel vérifié
-- Next.js App Router, React et TypeScript strict, CSS natif sans bibliothèque UI.
-- Accueil interactif : recherche locale, filtre par élément, roue symbolique, aperçu de fiche et bascule clair/sombre.
-- Prénoms, variantes, textes et symboles codés localement ; ce n'est pas un catalogue vérifié.
+## État actuel
+- Next.js App Router, React, TypeScript strict et CSS natif ; aucun framework UI.
+- Layout racine partagé pour le header, le footer et les styles globaux.
+- Accueil et six fiches de démonstration alimentés par des données locales ; recherche et filtres exécutés côté client.
 - Aucun accès applicatif à Supabase, aucune migration, authentification ou API métier.
-- Le header global et le footer sont rendus par le layout racine et partagés sur toutes les routes.
-- Les fiches prénom affichent le fil d’Ariane dans le bloc de présentation, puis une barre sticky opaque réservée aux ancres de section ; elle reste contenue dans la fiche pour ne pas recouvrir le footer. Le prénom stylisé reste le titre principal.
-- Statistiques INSEE et personnalités vérifiées non intégrées.
+- Statistiques des fiches fictives et explicitement signalées comme telles ; pas de données INSEE réelles.
 
-## Conventions de mise en page
-- Le header global reste identique sur toutes les pages : identité Namesia, navigation générale et bascule de thème.
-- La navigation contextuelle des fiches utilise `position: sticky`, un fond opaque adapté aux thèmes clair/sombre, des pastilles d’ancre colorées, un état actif basé sur les sections visibles et un défilement horizontal sur petit écran. Le fil d’Ariane reste dans le hero et défile avec la page.
-- Les espacements verticaux des sections et la respiration avant le footer utilisent des variables CSS communes et responsive.
+## Principes d’interface
+- Recherche simple, complétée par des parcours de découverte.
+- Présentation factuelle structurée et sobre ; symbolique plus illustrative et colorée.
+- Responsive, accessibilité clavier, préférences de mouvement et thèmes clair/sombre à vérifier sur les parcours principaux.
+- Les composants communs doivent rester partagés ; les détails de mise en page restent révisables si l’expérience le justifie.
 
-## Cible provisoire
-- Next.js pour les routes, le rendu et le SEO.
-- Supabase/Postgres pour fiches, formes de prénoms, contenus sourcés, symboles, associations éditoriales, personnalités et statistiques après validation du modèle.
-- Garder la provenance des faits et distinguer contenus documentés et interprétations poétiques.
+## Cible à concevoir
+- Supabase/Postgres pour prénoms, formes apparentées, contenus, associations symboliques, personnalités et statistiques après définition du modèle éditorial.
+- Provenance des faits, nuances et statut de vérification conservés avec les contenus.
 - Accès serveur par défaut ; examiner les politiques RLS avant toute exposition de données.
-- Vercel déploie depuis main. Les previews sont désactivés pour préserver le quota ; CI GitHub sur PR pour les contrôles pré-fusion.
+- Import des données INSEE avec source, période et périmètre.
 
-## À concevoir avant l'intégration
-- Modèle des prénoms et relations de variantes/apparentés.
-- Symboles réutilisables avec texte et justification propres à chaque association de prénom.
-- Sources et provenance des affirmations factuelles, personnalités et statistiques.
-- Import des données INSEE avec période et périmètre.
-- Rendu SEO des fiches et navigation entre pages.
+## Vérifications et déploiement
+- CI GitHub Actions sur les PR vers main : lint, TypeScript et build.
+- Vercel déploie depuis main ; previews désactivées volontairement pour préserver le quota.
+- Ne pas déclarer une vérification réussie sans résultat observé.

@@ -3,44 +3,26 @@
 **Mis à jour :** 2026-10-23.
 
 ## Socle
-- Next.js App Router, React, TypeScript strict ; Node.js 24+.
-- CI sur les PR vers main : installation, lint, vérification TypeScript et build.
-- Supabase créé mais non connecté ; aucune migration.
-- Vercel namesia déploie depuis main. Previews désactivés volontairement.
-- Toute modification passe par une branche et une PR ; aucune fusion sans approbation explicite.
+- Next.js App Router, React, TypeScript strict, CSS natif ; Node.js 24+.
+- CI sur les PR vers main : lint, TypeScript et build.
+- Supabase créé mais non connecté ; aucune migration ni authentification.
+- Vercel déploie depuis main ; previews désactivées volontairement.
 
-## Prototype visuel
-- Accueil avec direction artistique plus colorée et immersive.
-- Thèmes clair/sombre, recherche locale, filtres et roue interactive des éléments.
-- Cartes symboliques et fiche exploratoire pour illustrer le parcours.
-- Les contenus et associations sont des exemples de démonstration, non vérifiés.
-- Pages prénom via `/prenoms/[slug]`, avec des fiches de démonstration pour six prénoms.
-- Le titre principal des fiches utilise `Dancing Script` via une variable CSS, avec une règle plus spécifique que la typographie générique des titres.
-- Footer éditorial partagé dans le layout racine : identité cohérente, liens d’exploration et copyright dynamique. Aucun lien légal n’est affiché tant que les pages correspondantes ne sont pas définies.
-- Les courbes et tableaux statistiques utilisent uniquement des valeurs inventées, signalées explicitement comme fictives ; aucune donnée INSEE réelle n'est encore intégrée.
-- Pas encore de données éditoriales Supabase ni de catalogue vérifié prêt à publication.
+## Produit et contenu
+- Prototype avec une page de découverte et six fiches alimentés par des données locales.
+- La direction produit privilégie une recherche directe et une exploration complémentaire.
+- Les contenus et associations restent des exemples non vérifiés ; les statistiques présentes dans les fiches sont fictives.
+- Les registres factuel et symbolique doivent être distingués visuellement et éditorialement.
+- Favoris et comparaison reportés ; aucun compte utilisateur nécessaire pour le périmètre actuel.
 
-## Vérifications locales et CI
-- La PR #7 est fusionnée dans `main`. La CI a validé lint, TypeScript et build après correction des erreurs ESLint.
-- Le déploiement de production correspondant est marqué READY sur Vercel.
-- Des vulnérabilités de dépendances signalées précédemment restent à examiner ; ne pas lancer `npm audit fix --force` sans analyse.
-
-## Conventions d’interface
-- Le fil d’Ariane est intégré au bloc de présentation du prénom ; la barre sticky opaque contient uniquement les ancres stylisées en pastilles, avec état actif et défilement horizontal mobile. Vérification visuelle mobile encore à faire, les previews Vercel étant désactivées.
-- Les espacements de sections et la séparation avant le footer sont définis par des variables CSS responsive. Le footer reste rendu une seule fois par le layout racine.
-
-## Documentation
-- Décision actée : documentation du projet en français ; conventions de code et identifiants techniques en anglais.
-- Harmonisation complète, dont `AGENTS.md`, suivie dans [l'issue #8](https://github.com/Nabouna32/Namesia/issues/8), à traiter après le chantier dépendances/CI.
-
-## Limites
-- Les liens des fiches de démonstration permettent de naviguer entre les prénoms connus ; les variantes non prises en charge restent des libellés sans page.
-- Les filtres et la roue reposent sur des associations de démonstration.
-- Aucun chiffre INSEE n'est affiché : l'intégration devra utiliser des données sourcées.
-- Les fiches prénom utilisent des panneaux éditoriaux arrondis. Les libellés de brouillon sont retirés de l'interface publique ; les données statistiques fictives restent explicitement signalées comme telles.
+## Limites connues
+- Pas de catalogue éditorial validé, de données INSEE réelles, de sources connectées ni de Supabase applicatif.
+- Les liens de variantes peuvent ne pas disposer d’une fiche dédiée.
+- La vérification visuelle réelle sur plusieurs tailles d’écran reste nécessaire ; ne pas la confondre avec la CI.
+- Des vulnérabilités de dépendances ont été signalées auparavant ; les examiner séparément et ne pas exécuter npm audit fix --force sans analyse.
 
 ## Prochaines étapes
-1. Ajuster l'identité et les parcours à partir des retours visuels.
-2. Définir le modèle de contenu, les sources, variantes, symboles et personnalités.
-3. Préparer la migration Supabase et les données officielles.
-4. Remplacer progressivement les contenus de démonstration par des contenus éditoriaux vérifiés.
+1. Examiner la PR de refonte et ses contrôles CI.
+2. Vérifier visuellement l’accueil et les fiches sur mobile et bureau.
+3. Concevoir le modèle éditorial et la provenance avant les migrations Supabase.
+4. Remplacer progressivement les exemples par des contenus sourcés.
