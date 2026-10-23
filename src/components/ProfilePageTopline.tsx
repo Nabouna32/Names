@@ -13,7 +13,7 @@ export default function ProfilePageTopline() {
     targets.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, []);
-  return <nav className="profile-page-topline" aria-label="Navigation de la fiche">
+  return <nav className="profile-page-topline profile-section-nav" aria-label="Navigation de la fiche">
     {profileSections.map(({ id, label }, index) => <a key={id} href={`#${id}`} className={activeSection === id ? "is-active" : undefined} aria-current={activeSection === id ? "location" : undefined} onClick={() => setActiveSection(id)}>
       <span className="profile-section-nav-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><span>{label}</span>
     </a>)}
