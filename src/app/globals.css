@@ -138,3 +138,41 @@ body{font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
  .profile-hero{min-height:0;padding-top:38px;padding-bottom:24px}
  .profile-orbit-art{height:205px;transform:scale(.78);margin:-3px 0}
 }
+
+
+/* Fiche prénom : lecture plus progressive et statistiques repliables */
+.profile-intro-card{margin-top:42px;padding:24px}
+.profile-section{padding-top:52px}
+.profile-section-heading{margin-bottom:22px}
+.profile-story-grid,.profile-symbol-grid,.profile-celebrity-grid{gap:12px}
+.profile-text-card,.profile-celebrity-card{padding:20px}
+.profile-symbol-section{padding-top:58px;margin-top:42px}
+.stats-profile{padding-top:48px}
+.stats-profile .profile-section-heading{margin-bottom:18px}
+.stats-accordion{border:1px solid var(--line);border-radius:13px;background:var(--paper);overflow:hidden;box-shadow:var(--shadow)}
+.stats-accordion summary{display:flex;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;list-style:none}
+.stats-accordion summary::-webkit-details-marker{display:none}
+.stats-accordion summary::marker{content:""}
+.stats-accordion summary:hover{background:var(--surface)}
+.stats-accordion-icon{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;border-radius:12px;background:var(--surface);color:var(--accent);font-size:22px}
+.stats-accordion-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:4px}
+.stats-accordion-copy strong{font-size:15px;line-height:1.45;color:var(--ink)}
+.stats-accordion-copy small{font-size:12px;line-height:1.6;color:var(--muted)}
+.stats-accordion-chevron{font-size:21px;color:var(--accent);transition:transform .2s}
+.stats-accordion[open] .stats-accordion-chevron{transform:rotate(45deg)}
+.stats-accordion-content{padding:0 18px 20px;display:grid;gap:14px}
+.stats-accordion-content .stats-demo-warning{margin-top:2px}
+.stats-accordion-content .stats-kpis{margin:0}
+.stats-accordion-content .stats-source-note{margin:0}
+.profile-editorial-note{padding-top:16px}
+@media(max-width:760px){
+ .profile-intro-card{margin-top:30px;padding:19px}
+ .profile-section{padding-top:42px}
+ .profile-symbol-section{padding-top:44px;margin-top:32px}
+ .stats-profile{padding-top:38px}
+ .stats-accordion summary{padding:14px;gap:10px}
+ .stats-accordion-icon{width:34px;height:34px;flex-basis:34px}
+ .stats-accordion-copy strong{font-size:14px}
+ .stats-accordion-copy small{font-size:11px}
+ .stats-accordion-content{padding:0 12px 14px}
+}
