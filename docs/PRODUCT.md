@@ -9,7 +9,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 
 ## Expérience
 - Explorer les prénoms par recherche, prénoms apparentés et roue des éléments symboliques (feu, eau, air, terre, cosmos).
-- Découvrir une fiche avec paragraphes factuels et sections culturelles identifiées par des repères visuels/emoji, ainsi qu'un univers symbolique illustré par des vignettes colorées et des phrases écrites pour le prénom.
+- Découvrir une fiche organisée en panneaux éditoriaux cohérents, avec des repères visuels/emoji pour les sections culturelles et un univers symbolique illustré par des vignettes colorées.
 - Naviguer entre variantes et formes apparentées par des pastilles cliquables.
 - Présenter au maximum 8 personnalités pertinentes par prénom, si les sources et la notoriété le justifient ; préciser les domaines et professions.
 - Présenter les statistiques INSEE avec chiffres clés, courbe interactive et tableau consultable lorsque les données sont intégrées.
@@ -27,7 +27,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Les correspondances élémentaires sont une taxonomie éditoriale, pas une classification objective.
 
 ## Direction visuelle
-- Palette expressive avec dégradés irisés et couleurs associées aux vignettes symboliques.
+- Palette expressive avec dégradés irisés et couleurs associées aux vignettes symboliques ; sur les fiches, panneaux doux et arrondis pour structurer la lecture sans encadrer chaque paragraphe.
 - Emojis comme repères de catégories (✝️ saints, ⭐ personnalités, 📈 statistiques), sans remplacer les titres accessibles.
 - Thèmes clair et sombre, formes douces et motifs célestes dosés.
 - La poésie et la couleur coexistent avec une typographie lisible et une information factuelle structurée.
