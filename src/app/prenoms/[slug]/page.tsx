@@ -193,6 +193,6 @@ export default async function NameProfilePage({ params }: { params: Promise<{ sl
       <section className="profile-section profile-panel related-section"><div className="profile-section-heading"><p className="eyebrow">✦ À DÉCOUVRIR AUSSI</p><h2>Prénoms <em>associés</em></h2></div><div className="related-name-links">{related.map((item) => <Link key={item.slug} href={`/prenoms/${item.slug}`}><span>{item.emoji}</span><strong>{item.name}</strong><small>{item.origin}</small><b>↗</b></Link>)}</div><p className="profile-variants-label">Variantes et formes proches</p><div className="profile-variant-links">{entry.variants.map((variant) => { const target = demoNames.find((item) => item.name.toLocaleLowerCase("fr-FR") === variant.toLocaleLowerCase("fr-FR")); return target ? <Link key={variant} href={`/prenoms/${target.slug}`}>{variant} ↗</Link> : <span key={variant} title="Fiche à créer ultérieurement">{variant}</span>; })}</div></section>
       
     </div>
-    <footer className="footer"><Link className="wordmark" href="/">namesia<span>✳</span></Link><p>Un prénom, mille histoires à explorer.</p></footer>
+    
   </main>;
 }

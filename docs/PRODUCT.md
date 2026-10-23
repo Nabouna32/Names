@@ -17,6 +17,10 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité.
 - Préserver une ambiance chaleureuse, immersive, colorée et poétique : Namesia ne doit pas ressembler à une encyclopédie austère.
 
+## Navigation et identité de marque
+- Le footer est partagé entre les pages et termine l’expérience avec une signature éditoriale cohérente, des liens d’exploration fonctionnels et une attribution de copyright.
+- N’afficher des liens légaux ou de confidentialité que lorsqu’ils mènent à des informations réelles et adaptées au service ; le copyright ne remplace pas les obligations légales.
+
 ## Principes éditoriaux
 - Séparer faits documentés, traditions culturelles, hypothèses et créations poétiques.
 - Les associations symboliques et les « vocations imaginaires » sont des propositions créatives, jamais des vérités scientifiques ni des prédictions sur les personnes.

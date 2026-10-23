@@ -7,6 +7,7 @@
 - Accueil interactif : recherche locale, filtre par élément, roue symbolique, aperçu de fiche et bascule clair/sombre.
 - Prénoms, variantes, textes et symboles codés localement ; ce n'est pas un catalogue vérifié.
 - Aucun accès applicatif à Supabase, aucune migration, authentification ou API métier.
+- `SiteFooter` est rendu par le layout racine et partagé par l’accueil et les fiches prénom ; son contenu et son style sont définis à un seul endroit.
 - Statistiques INSEE et personnalités vérifiées non intégrées.
 
 ## Cible provisoire
