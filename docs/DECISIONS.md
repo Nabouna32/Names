@@ -17,8 +17,8 @@ Ne conserver que les décisions structurantes encore utiles.
 ## D-005 — Univers factuel et symbolique
 **Statut : direction produit adoptée.** Viser un équilibre approximatif entre histoire/faits culturels et symbolisme poétique. Le site n'est pas un assistant IA.
 
-## D-006 — Direction visuelle immersive
-**Statut : prototype à valider.** Palette irisée, vignettes colorées, emojis comme repères, roue des éléments et thèmes clair/sombre.
+## D-006 — Direction visuelle immersive et éditoriale
+**Statut : direction en cours de validation visuelle.** Palette irisée, vignettes colorées, emojis comme repères, roue des éléments et thèmes clair/sombre. Les fiches utilisent des panneaux arrondis cohérents pour structurer les grandes sections, sans mettre chaque paragraphe en boîte.
 
 ## D-007 — Symbolisme et roue des éléments
 **Statut : concept adopté, associations à éditer.** Les symboles sont des interprétations créatives personnalisées ; les éléments sont une taxonomie de découverte, pas des vérités objectives.
