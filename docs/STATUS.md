@@ -32,7 +32,7 @@
 - Les liens des fiches de démonstration permettent de naviguer entre les prénoms connus ; les variantes non prises en charge restent des libellés sans page.
 - Les filtres et la roue reposent sur des associations de démonstration.
 - Aucun chiffre INSEE n'est affiché : l'intégration devra utiliser des données sourcées.
-- Revue visuelle en cours : deux variantes temporaires de la section Symbolique sont affichées sur les fiches prénom pour comparaison (B sans conteneur extérieur, puis A avec conteneur arrondi). À supprimer après le choix de l'utilisateur.
+- La section Symbolique conserve le conteneur arrondi retenu lors de la comparaison visuelle ; l'harmonisation des autres sections reste à décider.
 
 ## Prochaines étapes
 1. Diagnostiquer et corriger les avertissements de dépendances ainsi que l'échec de la CI.
