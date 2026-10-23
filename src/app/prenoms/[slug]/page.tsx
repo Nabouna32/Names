@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProfilePageTopline from "@/components/ProfilePageTopline";
 import type { Metadata } from "next";
 import { Dancing_Script } from "next/font/google";
@@ -182,7 +183,7 @@ export default async function NameProfilePage({ params }: { params: Promise<{ sl
   return <main className="profile-page">
     <section className={`profile-hero tone-${entry.tone}`}>
       <div className="profile-hero-glow" aria-hidden="true" />
-      <div className="profile-hero-copy"><nav className="profile-breadcrumb" aria-label="Fil d’Ariane"><a href="/" aria-label="Accueil"><svg aria-hidden="true" viewBox="0 0 20 20" width="15" height="15" fill="none"><path d="m2.8 9 7.2-6 7.2 6v7.2a1 1 0 0 1-1 1h-4.1v-5H7.9v5H3.8a1 1 0 0 1-1-1V9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a><span aria-hidden="true">›</span><a href="/#decouvrir">Prénoms</a><span aria-hidden="true">›</span><span aria-current="page">{entry.name}</span></nav><p className="profile-kicker">{entry.element} · UNIVERS SYMBOLIQUE</p><h1 className={`profile-name-title ${nameScript.variable}`}>{entry.name}<span>.</span></h1><p className="profile-meaning">{entry.meaning}</p><div className="profile-facts"><span><small>Origine</small><strong>{entry.origin}</strong></span><span><small>Élément symbolique</small><strong>{entry.element}</strong></span></div></div>
+      <div className="profile-hero-copy"><nav className="profile-breadcrumb" aria-label="Fil d’Ariane"><Link href="/" aria-label="Accueil"><svg aria-hidden="true" viewBox="0 0 20 20" width="15" height="15" fill="none"><path d="m2.8 9 7.2-6 7.2 6v7.2a1 1 0 0 1-1 1h-4.1v-5H7.9v5H3.8a1 1 0 0 1-1-1V9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></Link><span aria-hidden="true">›</span><Link href="/#decouvrir">Prénoms</Link><span aria-hidden="true">›</span><span aria-current="page">{entry.name}</span></nav><p className="profile-kicker">{entry.element} · UNIVERS SYMBOLIQUE</p><h1 className={`profile-name-title ${nameScript.variable}`}>{entry.name}<span>.</span></h1><p className="profile-meaning">{entry.meaning}</p><div className="profile-facts"><span><small>Origine</small><strong>{entry.origin}</strong></span><span><small>Élément symbolique</small><strong>{entry.element}</strong></span></div></div>
       <div className="profile-orbit-art" aria-hidden="true"><div className="profile-orbit orbit-1" /><div className="profile-orbit orbit-2" /><div className="profile-orbit orbit-3" /><div className="profile-planet">{entry.emoji}</div><div className="profile-art-caption">Origines et symbolique</div></div>
     </section>
     <ProfilePageTopline />
