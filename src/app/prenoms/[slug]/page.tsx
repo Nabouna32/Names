@@ -144,29 +144,29 @@ function DemoStatistics({ entry }: { entry: DemoName }) {
     return `${x},${y}`;
   }).join(" ");
   return <section className="profile-section profile-panel stats-profile" id="statistiques">
-    <div className="profile-section-heading"><p className="eyebrow">📈 STATISTIQUES</p><h2>Popularité en <em>France</em></h2><p>Maquette de présentation : les chiffres ci-dessous sont fictifs et ne proviennent pas de l’INSEE.</p></div>
+    <div className="profile-section-heading"><p className="eyebrow">📈 STATISTIQUES</p><h2>Popularité en <em>France</em></h2><p>Les chiffres présentés ici sont fictifs et ne proviennent pas de l’INSEE. Ils ne décrivent pas la popularité réelle du prénom.</p></div>
     <details className="stats-accordion">
       <summary>
         <span className="stats-accordion-icon" aria-hidden="true">↗</span>
-        <span className="stats-accordion-copy"><strong>Voir les données de démonstration</strong><small>Chiffres fictifs · Courbe et tableau</small></span>
+        <span className="stats-accordion-copy"><strong>Consulter les valeurs illustratives</strong><small>Chiffres fictifs · Courbe et tableau</small></span>
         <span className="stats-accordion-chevron" aria-hidden="true">＋</span>
       </summary>
       <div className="stats-accordion-content">
     <div className="stats-demo-warning"><strong>DONNÉES ENTIÈREMENT FICTIVES</strong><span>Ces nombres sont inventés pour tester l'affichage. Ils ne proviennent pas de l'INSEE et ne doivent pas être interprétés comme des statistiques réelles.</span></div>
     <div className="stats-kpis">
-      <article><span>Année la plus récente de la maquette</span><strong>{values[values.length - 1].year}</strong><small>Année illustrative</small></article>
+      <article><span>Dernière année illustrée</span><strong>{values[values.length - 1].year}</strong><small>Année illustrative</small></article>
       <article><span>Naissances (exemple)</span><strong>{values[values.length - 1].births.toLocaleString("fr-FR")}</strong><small>Valeur inventée</small></article>
       <article><span>Période illustrée</span><strong>{values[0].year}–{values[values.length - 1].year}</strong><small>10 points de démonstration</small></article>
     </div>
-    <div className="stats-chart-card"><div className="stats-chart-title"><h3>Naissances par année</h3><span>Maquette non officielle</span></div>
+    <div className="stats-chart-card"><div className="stats-chart-title"><h3>Naissances par année</h3><span>Valeurs fictives</span></div>
       <svg viewBox="0 0 700 225" role="img" aria-label={`Courbe fictive de démonstration pour le prénom ${entry.name}`} className="stats-chart">
         {[50,95,140,185].map((y) => <line key={y} x1="35" y1={y} x2="665" y2={y} className="chart-gridline" />)}
         <polyline points={points} fill="none" className="chart-line" strokeLinecap="round" strokeLinejoin="round" />
         {values.map((item, index) => <g key={item.year}><circle cx={35 + (index / (values.length - 1)) * 630} cy={185 - ((item.births - min) / Math.max(max - min, 1)) * 135} r="3.5" className="chart-dot" /><text x={35 + (index / (values.length - 1)) * 630} y="211" textAnchor="middle" className="chart-label">{item.year}</text></g>)}
       </svg>
     </div>
-    <div className="stats-table-wrap"><table className="stats-table"><caption>Tableau des valeurs inventées pour tester la mise en page</caption><thead><tr><th>Année</th><th>Naissances fictives</th><th>Statut</th></tr></thead><tbody>{values.map((item) => <tr key={item.year}><td>{item.year}</td><td>{item.births.toLocaleString("fr-FR")}</td><td><span className="fake-data-label">Donnée fictive</span></td></tr>)}</tbody></table></div>
-    <p className="stats-source-note">Source : aucune. Jeu de données local créé uniquement pour la démonstration. Les données officielles seront intégrées plus tard à partir des fichiers INSEE téléchargés et contrôlés.</p>
+    <div className="stats-table-wrap"><table className="stats-table"><caption>Valeurs fictives présentées à titre illustratif</caption><thead><tr><th>Année</th><th>Naissances fictives</th><th>Statut</th></tr></thead><tbody>{values.map((item) => <tr key={item.year}><td>{item.year}</td><td>{item.births.toLocaleString("fr-FR")}</td><td><span className="fake-data-label">Donnée fictive</span></td></tr>)}</tbody></table></div>
+    <p className="stats-source-note">Aucune source officielle : ces valeurs sont fictives et servent uniquement à illustrer la présentation.</p>
       </div>
     </details>
   </section>;
@@ -181,7 +181,7 @@ export default async function NameProfilePage({ params }: { params: Promise<{ sl
     <header className="profile-topbar"><Link className="wordmark" href="/">namesia<span>✳</span></Link><nav aria-label="Navigation de la fiche"><a href="#histoire">Histoire</a><a href="#symboles">Symboles</a><a href="#statistiques">Statistiques</a></nav><div className="profile-topbar-actions"><ThemeToggle /><Link className="profile-back-link" href="/">← Explorer les prénoms</Link></div></header>
     <section className={`profile-hero tone-${entry.tone}`}>
       <div className="profile-hero-glow" aria-hidden="true" />
-      <div className="profile-hero-copy"><p className="eyebrow">FICHE PRÉNOM</p><p className="profile-kicker">{entry.element} · UNIVERS SYMBOLIQUE</p><h1>{entry.name}<span>.</span></h1><p className="profile-meaning">{entry.meaning}</p><div className="profile-facts"><span><small>Origine</small><strong>{entry.origin}</strong></span><span><small>Élément symbolique</small><strong>{entry.element}</strong></span><span><small>Type de contenu</small><strong>Culture et symbolique</strong></span></div></div>
+      <div className="profile-hero-copy"><p className="profile-kicker">{entry.element} · UNIVERS SYMBOLIQUE</p><h1>{entry.name}<span>.</span></h1><p className="profile-meaning">{entry.meaning}</p><div className="profile-facts"><span><small>Origine</small><strong>{entry.origin}</strong></span><span><small>Élément symbolique</small><strong>{entry.element}</strong></span><span><small>Type de contenu</small><strong>Culture et symbolique</strong></span></div></div>
       <div className="profile-orbit-art" aria-hidden="true"><div className="profile-orbit orbit-1" /><div className="profile-orbit orbit-2" /><div className="profile-orbit orbit-3" /><div className="profile-planet">{entry.emoji}</div><div className="profile-art-caption">Origines et symbolique</div></div>
     </section>
     <div className="profile-content">
@@ -191,8 +191,8 @@ export default async function NameProfilePage({ params }: { params: Promise<{ sl
       <section className="profile-section profile-panel"><div className="profile-section-heading"><p className="eyebrow">⭐ PERSONNALITÉS CONNUES</p><h2>Personnalités portant ce <em>prénom</em></h2></div><div className="profile-celebrity-grid">{entry.celebrities.map((person) => <article className="profile-celebrity-card" key={person.name}><span>⭐</span><h3>{person.name}</h3><strong>{person.role}</strong><p>{person.detail}</p></article>)}</div></section>
       <DemoStatistics entry={entry} />
       <section className="profile-section profile-panel related-section"><div className="profile-section-heading"><p className="eyebrow">✦ À DÉCOUVRIR AUSSI</p><h2>Prénoms <em>associés</em></h2></div><div className="related-name-links">{related.map((item) => <Link key={item.slug} href={`/prenoms/${item.slug}`}><span>{item.emoji}</span><strong>{item.name}</strong><small>{item.origin}</small><b>↗</b></Link>)}</div><p className="profile-variants-label">Variantes et formes proches</p><div className="profile-variant-links">{entry.variants.map((variant) => { const target = demoNames.find((item) => item.name.toLocaleLowerCase("fr-FR") === variant.toLocaleLowerCase("fr-FR")); return target ? <Link key={variant} href={`/prenoms/${target.slug}`}>{variant} ↗</Link> : <span key={variant} title="Fiche à créer ultérieurement">{variant}</span>; })}</div></section>
-      <p className="profile-editorial-note">Namesia distingue les faits culturels des créations symboliques. Les contenus de cette version sont une maquette éditoriale à vérifier avant publication. Les statistiques affichées ci-dessus sont fictives.</p>
+      
     </div>
-    <footer className="footer"><Link className="wordmark" href="/">namesia<span>✳</span></Link><p>Un prénom, mille histoires à explorer.</p><span>Une aventure en construction · 2026</span></footer>
+    <footer className="footer"><Link className="wordmark" href="/">namesia<span>✳</span></Link><p>Un prénom, mille histoires à explorer.</p></footer>
   </main>;
 }
