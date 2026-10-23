@@ -3,25 +3,27 @@
 **Mis à jour :** 2026-10-23.
 
 ## Socle
-- Application Next.js App Router, React et TypeScript ; Node.js 24+ requis.
-- Recherche côté client sur quelques exemples locaux.
-- Projet Supabase créé, sans intégration applicative ni migration de schéma.
-- Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
-- Dépendances verrouillées dans `package-lock.json` ; installation CI reproductible via `npm ci`.
-- CI sur les PR vers `main` : installation, lint, TypeScript et build. Aucun audit de vulnérabilités dans ce contrôle PR.
-- Audit de sécurité séparé chaque lundi à 08:17 UTC, sur les dépendances de production et de développement ; déclenchement manuel possible.
-- Dependabot vérifie chaque semaine les dépendances npm et les actions GitHub, en couvrant les mises à jour majeures, mineures et correctives.
-- L'audit complet a signalé `braces@3.0.3`, dépendance transitive de développement sans correctif amont connu au moment du dernier audit ; le rapport hebdomadaire permet de détecter l'arrivée d'un correctif.
-- Vercel Preview désactivé volontairement ; seule `main` déploie en production, pour préserver le quota de 100 déploiements par jour.
+- Next.js App Router, React, TypeScript strict ; Node.js 24+.
+- CI sur les PR vers main : installation, lint, vérification TypeScript et build.
+- Supabase créé mais non connecté ; aucune migration.
+- Vercel namesia déploie depuis main. Previews désactivés volontairement.
+- Toute modification passe par une branche et une PR ; aucune fusion sans approbation explicite.
 
-## Limites actuelles
-- Les exemples locaux ne constituent pas un catalogue éditorial vérifié.
-- Pas de schéma Supabase, de provenance éditoriale structurée ni de processus de vérification/publication.
-- Pas de tests de parcours documentés.
-- Sans déploiement Preview, les changements d'interface doivent être vérifiés localement et par CI avant fusion ; la production est vérifiée après fusion.
+## Prototype visuel
+- Accueil avec direction artistique plus colorée et immersive.
+- Thèmes clair/sombre, recherche locale, filtres et roue interactive des éléments.
+- Cartes symboliques et fiche exploratoire pour illustrer le parcours.
+- Les contenus et associations sont des exemples de démonstration, non vérifiés.
+- Pas encore de pages prénom dédiées, données éditoriales Supabase, personnalités vérifiées ni statistiques INSEE.
+
+## Limites
+- Les pastilles de variantes ne naviguent pas encore vers des pages prénom complètes.
+- Les filtres et la roue reposent sur des associations de démonstration.
+- Aucun chiffre INSEE n'est affiché : l'intégration devra utiliser des données sourcées.
+- La direction visuelle doit encore être revue par l'utilisateur.
 
 ## Prochaines étapes
-1. Prioriser les parcours et le périmètre de la fiche de prénom.
-2. Définir le modèle éditorial, les sources et le processus de vérification.
-3. Créer une migration Supabase après validation du modèle.
-4. Remplacer les exemples de démonstration par des données vérifiées et tester la recherche jusqu'à la fiche.
+1. Ajuster l'identité et les parcours après revue du prototype.
+2. Définir le modèle de contenu, les sources, variantes, symboles et personnalités.
+3. Préparer la migration Supabase et les données officielles.
+4. Implémenter les vraies pages prénom et tester le parcours.

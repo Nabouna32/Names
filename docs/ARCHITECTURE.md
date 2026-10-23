@@ -2,34 +2,23 @@
 
 **Mis à jour :** 2026-10-23.
 
-## État actuel vérifié dans le dépôt
-- Next.js App Router, React et TypeScript strict.
-- CSS du projet, sans bibliothèque UI ajoutée au départ.
-- Page d'accueil côté client qui filtre des exemples de prénoms codés localement.
-- Aucun accès applicatif à Supabase, aucune authentification et aucune API métier.
-- Le site ne propose pas de fonctionnalité d'IA aux visiteurs. L'IA peut être utilisée dans le processus éditorial en amont ; ce n'est pas une dépendance runtime définie pour l'application.
-
-## Flux actuel
-Le navigateur filtre des exemples statiques intégrés au code. Ces exemples sont destinés au prototype, pas une source éditoriale vérifiée. Aucun flux de publication ou de validation des fiches n'est encore implémenté.
+## État actuel vérifié
+- Next.js App Router, React et TypeScript strict, CSS natif sans bibliothèque UI.
+- Accueil interactif : recherche locale, filtre par élément, roue symbolique, aperçu de fiche et bascule clair/sombre.
+- Prénoms, variantes, textes et symboles codés localement ; ce n'est pas un catalogue vérifié.
+- Aucun accès applicatif à Supabase, aucune migration, authentification ou API métier.
+- Statistiques INSEE et personnalités vérifiées non intégrées.
 
 ## Cible provisoire
-- Next.js pour l'interface, les routes et le rendu.
-- Supabase/Postgres pour les données métier, avec migrations versionnées lorsque le schéma sera défini.
-- Accès serveur par défaut et exposition publique minimale ; politiques RLS adaptées si et là où elles sont nécessaires.
-- Vercel pour les déploiements reliés à GitHub ; seule la branche `main` déploie en production. Les déploiements Preview sont désactivés pour maîtriser le quota quotidien.
-- Un modèle de contenu qui permet de conserver la provenance et les nuances des affirmations éditoriales.
+- Next.js pour les routes, le rendu et le SEO.
+- Supabase/Postgres pour fiches, formes de prénoms, contenus sourcés, symboles, associations éditoriales, personnalités et statistiques après validation du modèle.
+- Garder la provenance des faits et distinguer contenus documentés et interprétations poétiques.
+- Accès serveur par défaut ; examiner les politiques RLS avant toute exposition de données.
+- Vercel déploie depuis main. Les previews sont désactivés pour préserver le quota ; CI GitHub sur PR pour les contrôles pré-fusion.
 
-Cette cible reste révisable. Ne pas introduire de cache, moteur de recherche spécialisé, système d'authentification ou service IA dans le site avant d'avoir validé un besoin concret.
-
-## Environnement et livraison
-- Dépôt : `Nabouna32/Namesia`.
-- Projet Vercel : `namesia` — [namesia.vercel.app](https://namesia.vercel.app).
-- CI GitHub sur les PR : installation reproductible avec `npm ci`, lint, vérification TypeScript et build de production.
-- Les previews Vercel ne sont pas disponibles volontairement ; la CI est le contrôle automatisé pré-fusion. La production se met à jour depuis `main`.
-- Le prototype ne nécessite aucune variable d'environnement. À l'intégration de Supabase, documenter les noms requis dans `.env.example`. Les secrets ne doivent jamais être accessibles au navigateur.
-
-## À réévaluer avant implémentation
-- Modèle des prénoms, variantes, origines multiples, affirmations sourcées et révisions éditoriales.
-- Recherche Postgres vs recherche avancée, rendu statique vs dynamique.
-- Stratégie de vérification et de publication du contenu produit avec l'aide de l'IA.
-- Bibliothèque UI uniquement si elle apporte un gain réel.
+## À concevoir avant l'intégration
+- Modèle des prénoms et relations de variantes/apparentés.
+- Symboles réutilisables avec texte et justification propres à chaque association de prénom.
+- Sources et provenance des affirmations factuelles, personnalités et statistiques.
+- Import des données INSEE avec période et périmètre.
+- Rendu SEO des fiches et navigation entre pages.
