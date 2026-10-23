@@ -176,3 +176,120 @@ body{font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
  .stats-accordion-copy small{font-size:11px}
  .stats-accordion-content{padding:0 12px 14px}
 }
+
+
+/* Refonte éditoriale : priorité à la lisibilité et aux intitulés explicites */
+:root{
+  --bg:#faf9f7;
+  --paper:#ffffff;
+  --ink:#262433;
+  --muted:#625f70;
+  --line:#e5e2e9;
+  --surface:#f1eef7;
+  --accent:#6e50a1;
+  --shadow:0 12px 32px #28203a12;
+  --hero-a:#f2edf8;
+  --hero-b:#e9edf8;
+  --footer:#f0edf5;
+}
+:root[data-theme="sombre"]{
+  --bg:#17151d;
+  --paper:#211e29;
+  --ink:#f5f2f8;
+  --muted:#c1bacb;
+  --line:#3b3546;
+  --surface:#2b2636;
+  --accent:#c7a8ff;
+  --shadow:0 12px 32px #0003;
+  --hero-a:#282131;
+  --hero-b:#202635;
+  --footer:#211d29;
+}
+body{font-size:16px;line-height:1.65}
+.main-nav{font-size:13px;gap:25px}
+.eyebrow{font-size:11px;letter-spacing:.11em;line-height:1.5;margin-bottom:12px}
+.hero{min-height:560px;padding:62px 9%;gap:30px}
+.hero h1{font-size:clamp(46px,5.1vw,68px);line-height:1.08;letter-spacing:-1.5px}
+.hero-description{font-size:17px;line-height:1.75;max-width:440px;margin:20px 0 25px;color:var(--muted)}
+.primary-cta{font-size:14px;padding:15px 19px}
+.hero-note{font-size:13px}
+.section-wrap{max-width:1240px}
+.section-intro h2,.section-heading h2,.stats-teaser h2{font-size:clamp(30px,3.3vw,43px);letter-spacing:-.8px;line-height:1.18}
+.section-intro>p:last-child,.heading-side{font-size:15px;line-height:1.75;color:var(--muted)}
+.section-intro{max-width:680px}
+.name-card{min-height:245px;padding:25px}
+.name-card-title{font-size:32px}
+.name-card-origin,.name-card-meaning,.name-card-bottom{font-size:14px;line-height:1.65}
+.name-card-meaning{color:var(--muted)}
+.filter-chip{font-size:13px;padding:10px 14px}
+.result-count,.demo-note{font-size:13px}
+.symbolic-feature{gap:24px}
+.symbolic-lead p,.symbol-card p,.story-card p{font-size:15px;line-height:1.75}
+.symbolic-lead h3{font-size:38px}
+.symbol-card{padding:22px}
+.symbol-card h4{font-size:19px}
+.story-grid{gap:14px}
+.story-card{padding:22px;gap:16px}
+.story-card>span{font-size:23px}
+.story-card h3{font-size:18px;margin:0 0 8px}
+.story-card small{font-size:11px}
+.stats-teaser{padding:36px;gap:25px}
+.stats-teaser p:not(.eyebrow){font-size:15px;line-height:1.8}
+.stats-status{font-size:11px}
+.footer p,.footer>span{font-size:13px}
+.profile-topbar nav{font-size:13px}
+.profile-hero{padding:48px 8%;min-height:350px}
+.profile-hero-copy .eyebrow,.profile-kicker{font-size:11px;letter-spacing:.1em}
+.profile-hero h1{font-size:clamp(52px,6vw,76px);letter-spacing:-1.5px}
+.profile-meaning{font-size:19px;line-height:1.65;max-width:560px}
+.profile-content{max-width:1120px;margin-inline:auto;padding:0 34px}
+.profile-intro-card{gap:20px;padding:28px}
+.profile-intro-card h2,.profile-section-heading h2{font-size:clamp(28px,3vw,38px);letter-spacing:-.7px;line-height:1.2}
+.profile-intro-card p:last-child,.profile-section-heading>p:not(.eyebrow){font-size:16px;line-height:1.8;color:var(--muted)}
+.profile-section{padding-top:58px}
+.profile-section-heading{margin-bottom:24px}
+.profile-text-card,.profile-celebrity-card{padding:24px}
+.profile-text-card>span,.profile-celebrity-card>span{font-size:12px;letter-spacing:.07em;line-height:1.5}
+.profile-text-card p,.profile-celebrity-card p,.profile-symbol-card p{font-size:15px;line-height:1.8}
+.profile-text-card small,.profile-celebrity-card strong{font-size:13px;line-height:1.7}
+.profile-symbol-card{padding:23px}
+.profile-symbol-card small{font-size:12px}
+.profile-symbol-card h3,.profile-celebrity-card h3{font-size:21px;line-height:1.3}
+.profile-symbol-card p{color:var(--muted)}
+.profile-art-caption{font-size:12px}
+.profile-section-heading .eyebrow{font-size:11px}
+.stats-profile .profile-section-heading>p:not(.eyebrow){max-width:680px}
+.stats-accordion-copy strong{font-size:16px}
+.stats-accordion-copy small{font-size:13px}
+.stats-demo-warning{line-height:1.7}
+.stats-demo-warning strong{font-size:12px}
+.stats-demo-warning span,.stats-kpis article span,.stats-kpis article small,.stats-source-note{font-size:13px;line-height:1.7}
+.stats-kpis article strong{font-size:25px}
+.stats-table{font-size:14px}
+.stats-table caption{font-size:13px}
+.profile-editorial-note{font-size:13px;line-height:1.8;color:var(--muted)}
+@media(max-width:760px){
+  body{font-size:15px}
+  .topbar{height:68px;padding-inline:5%}
+  .main-nav{display:none}
+  .hero{grid-template-columns:1fr;padding:48px 7% 32px;gap:5px}
+  .hero h1{font-size:clamp(42px,11vw,58px)}
+  .hero-description{font-size:16px}
+  .hero-universe{height:300px;transform:scale(.88);margin:-8px 0}
+  .section-intro h2,.section-heading h2,.stats-teaser h2{font-size:31px}
+  .section-intro>p:last-child,.heading-side{font-size:14px}
+  .name-card{min-height:220px;padding:21px}
+  .name-card-title{font-size:29px}
+  .story-card p,.symbolic-lead p,.symbol-card p{font-size:14px}
+  .stats-teaser{padding:25px 7%;grid-template-columns:auto 1fr}
+  .stats-status{grid-column:2}
+  .profile-content{padding:0 5%}
+  .profile-hero{padding:36px 7% 24px}
+  .profile-hero h1{font-size:52px}
+  .profile-meaning{font-size:17px}
+  .profile-intro-card{padding:20px;gap:14px}
+  .profile-intro-card h2,.profile-section-heading h2{font-size:28px}
+  .profile-intro-card p:last-child,.profile-section-heading>p:not(.eyebrow){font-size:14px}
+  .profile-text-card,.profile-celebrity-card,.profile-symbol-card{padding:19px}
+  .profile-text-card p,.profile-celebrity-card p,.profile-symbol-card p{font-size:14px}
+}
