@@ -104,6 +104,13 @@
   background: var(--bg);
   box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 9%, transparent);
 }
+.profile-section-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
 .profile-section-nav-number {
   display: inline-grid;
   width: 22px;
