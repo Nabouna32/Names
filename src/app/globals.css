@@ -106,3 +106,35 @@ body{font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
   .stats-table{min-width:420px}
 }
 @media(prefers-reduced-motion:reduce){body{transition:none}}
+
+
+/* Harmonisation des fiches prénom en thème sombre et réduction du vide dans le héros */
+.profile-topbar-actions{display:flex;align-items:center;gap:14px}
+.profile-topbar .theme-toggle{flex-shrink:0}
+.profile-hero{min-height:390px;padding-top:42px;padding-bottom:42px;gap:20px}
+.profile-orbit-art{height:250px;transform:scale(.88);transform-origin:center}
+.profile-orbit.orbit-1{width:290px;height:175px}
+.profile-orbit.orbit-2{width:230px;height:270px}
+.profile-orbit.orbit-3{width:250px;height:250px}
+.profile-planet{width:122px;height:122px;font-size:49px}
+.profile-planet:after{width:158px;height:40px;border-width:6px}
+.profile-art-caption{bottom:-2px}
+.profile-hero h1{color:var(--ink)}
+.profile-meaning{color:var(--muted)}
+.profile-facts span{background:color-mix(in srgb,var(--paper) 78%,transparent);border-color:var(--line)}
+.profile-facts small,.profile-facts strong{color:var(--muted)}
+:root[data-theme="sombre"] .profile-hero.tone-amber{--hero-a:#30263b;--hero-b:#202d43}
+:root[data-theme="sombre"] .profile-hero.tone-coral{--hero-a:#382631;--hero-b:#28243e}
+:root[data-theme="sombre"] .profile-hero.tone-rose{--hero-a:#382536;--hero-b:#29243f}
+:root[data-theme="sombre"] .profile-hero.tone-iris{--hero-a:#2c2541;--hero-b:#202f43}
+:root[data-theme="sombre"] .profile-hero.tone-lavender{--hero-a:#302541;--hero-b:#20303f}
+:root[data-theme="sombre"] .profile-hero.tone-blue{--hero-a:#20303f;--hero-b:#2b2540}
+:root[data-theme="sombre"] .profile-hero:before{opacity:.42}
+:root[data-theme="sombre"] .profile-art-caption{color:#d0c1e4}
+@media(max-width:760px){
+ .profile-topbar-actions{gap:8px}
+ .profile-topbar .theme-toggle{padding:8px 10px}
+ .profile-topbar .theme-label{display:none}
+ .profile-hero{min-height:0;padding-top:38px;padding-bottom:24px}
+ .profile-orbit-art{height:205px;transform:scale(.78);margin:-3px 0}
+}
