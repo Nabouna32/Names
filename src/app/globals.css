@@ -305,3 +305,34 @@ body{font-size:16px;line-height:1.65}
 @media(max-width:760px){
   .profile-symbol-section{padding:25px 16px 18px;margin-top:32px;border-radius:18px}
 }
+
+
+/* Fiche prénom : panneaux éditoriaux cohérents, sans encadrer chaque paragraphe */
+.profile-panel{
+  margin-top:42px;
+  padding:32px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:var(--surface);
+  box-shadow:var(--shadow);
+}
+.profile-panel.profile-section{padding-top:32px}
+.profile-panel .profile-section-heading{margin-bottom:24px}
+.profile-panel .profile-text-card,
+.profile-panel .profile-celebrity-card{
+  background:var(--paper);
+  border-color:var(--line);
+  border-radius:16px;
+  box-shadow:none;
+}
+.profile-panel .stats-accordion{background:var(--paper);box-shadow:none}
+.profile-panel .related-name-links a{background:var(--paper)}
+.profile-panel .profile-variants-label{margin-top:24px}
+.profile-symbol-section{box-shadow:var(--shadow)}
+@media(max-width:760px){
+  .profile-panel,
+  .profile-panel.profile-section{margin-top:30px;padding:21px 16px 18px;border-radius:18px}
+  .profile-panel .profile-section-heading{margin-bottom:18px}
+  .profile-panel .profile-story-grid,
+  .profile-panel .profile-celebrity-grid{gap:10px}
+}
