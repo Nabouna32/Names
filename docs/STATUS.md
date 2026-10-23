@@ -14,7 +14,9 @@
 - Thèmes clair/sombre, recherche locale, filtres et roue interactive des éléments.
 - Cartes symboliques et fiche exploratoire pour illustrer le parcours.
 - Les contenus et associations sont des exemples de démonstration, non vérifiés.
-- Pas encore de pages prénom dédiées, données éditoriales Supabase, personnalités vérifiées ni statistiques INSEE.
+- Pages prénom dédiées en cours de prototype via `/prenoms/[slug]`, avec des fiches de démonstration pour six prénoms.
+- Les courbes et tableaux statistiques utilisent uniquement des valeurs inventées, signalées explicitement comme fictives ; aucune donnée INSEE réelle n'est encore intégrée.
+- Pas encore de données éditoriales Supabase ni de catalogue vérifié prêt à publication.
 
 ## Vérifications locales et CI
 - Sur le poste de développement, `npm ci`, `npm run lint` et `npm run typecheck` ont terminé sans erreur ; le serveur `npm run dev` démarre.
@@ -27,7 +29,7 @@
 - Harmonisation complète, dont `AGENTS.md`, suivie dans [l'issue #8](https://github.com/Nabouna32/Namesia/issues/8), à traiter après le chantier dépendances/CI.
 
 ## Limites
-- Les pastilles de variantes ne naviguent pas encore vers des pages prénom complètes.
+- Les liens des fiches de démonstration permettent de naviguer entre les prénoms connus ; les variantes non prises en charge restent des libellés sans page.
 - Les filtres et la roue reposent sur des associations de démonstration.
 - Aucun chiffre INSEE n'est affiché : l'intégration devra utiliser des données sourcées.
 - La direction visuelle doit encore être revue par l'utilisateur.
