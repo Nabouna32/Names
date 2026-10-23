@@ -13,7 +13,7 @@
 
 ## Conventions de mise en page
 - Le header global reste identique sur toutes les pages : identité Namesia, navigation générale et bascule de thème.
-- La navigation contextuelle des fiches utilise `position: sticky`, un état actif basé sur les sections visibles et un défilement horizontal sur petit écran.
+- La navigation contextuelle des fiches utilise `position: sticky`, un fond opaque adapté aux thèmes clair/sombre, des pastilles d’ancre colorées, un état actif basé sur les sections visibles et un défilement horizontal sur petit écran. Le fil d’Ariane reste dans le hero et défile avec la page.
 - Les espacements verticaux des sections et la respiration avant le footer utilisent des variables CSS communes et responsive.
 
 ## Cible provisoire
