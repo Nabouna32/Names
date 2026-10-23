@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProfilePageTopline from "@/components/ProfilePageTopline";
 import type { Metadata } from "next";
 import { Dancing_Script } from "next/font/google";
