@@ -23,7 +23,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Nuancer les étymologies concurrentes ; afficher saints et fêtes seulement lorsqu'ils sont pertinents et sourcés.
 - Distinguer variantes, diminutifs et prénoms apparentés.
 - Les personnalités sont vérifiables, variées quand c'est pertinent, et limitées à 8 par fiche.
-- Les statistiques précisent source, période et périmètre. Ne pas simuler des données INSEE.
+- Les statistiques précisent source, période et périmètre. Avant l'intégration INSEE, des jeux entièrement fictifs peuvent servir à tester les graphiques et tableaux, à condition d'être signalés clairement comme inventés et de ne jamais être présentés comme des chiffres officiels.
 - Les correspondances élémentaires sont une taxonomie éditoriale, pas une classification objective.
 
 ## Direction visuelle
