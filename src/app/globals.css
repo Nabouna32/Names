@@ -295,28 +295,13 @@ body{font-size:16px;line-height:1.65}
 }
 
 
-/* Comparatif temporaire des deux présentations de la symbolique */
-.profile-symbol-section--b{
-  margin:42px 0 0;
-  padding:12px 0 8px;
-  background:transparent;
-}
-.profile-symbol-section--b .profile-section-heading,
-.profile-symbol-section--b .profile-symbol-grid{
-  max-width:none;
-}
-.profile-symbol-section--a{
+.profile-symbol-section{
   margin:42px 0 0;
   padding:38px 30px 30px;
   border:1px solid var(--line);
   border-radius:22px;
   background:var(--surface);
 }
-.profile-symbol-section--a .profile-section-heading,
-.profile-symbol-section--a .profile-symbol-grid{
-  max-width:none;
-}
 @media(max-width:760px){
-  .profile-symbol-section--b{padding:8px 0 4px;margin-top:32px}
-  .profile-symbol-section--a{padding:25px 16px 18px;margin-top:32px;border-radius:18px}
+  .profile-symbol-section{padding:25px 16px 18px;margin-top:32px;border-radius:18px}
 }
