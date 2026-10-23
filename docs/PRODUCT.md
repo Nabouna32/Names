@@ -16,6 +16,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Présenter les statistiques INSEE avec chiffres clés, courbe interactive et tableau consultable lorsque les données sont intégrées.
 - Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité ; conserver un contraste suffisant sur les vignettes colorées dans les deux thèmes.
 - Préserver une ambiance chaleureuse, immersive, colorée et poétique : Namesia ne doit pas ressembler à une encyclopédie austère.
+- Sur les fiches prénom, réserver une typographie manuscrite élégante au prénom principal ; garder les autres titres et contenus dans la typographie de lecture pour préserver la hiérarchie et la lisibilité.
 
 ## Navigation et identité de marque
 - Le footer est partagé entre les pages et termine l’expérience avec une signature éditoriale cohérente, des liens d’exploration fonctionnels et une attribution de copyright.
