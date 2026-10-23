@@ -15,7 +15,7 @@
 - Cartes symboliques et fiche exploratoire pour illustrer le parcours.
 - Les contenus et associations sont des exemples de démonstration, non vérifiés.
 - Pages prénom via `/prenoms/[slug]`, avec des fiches de démonstration pour six prénoms.
-- Le titre principal des fiches avait un conflit CSS : `.profile-hero h1` imposait Georgia via le raccourci `font`, qui pouvait écraser la police cursive fournie par `next/font`. Le correctif proposé applique explicitement `Dancing Script` via une variable CSS ; sa validation attend les contrôles de la PR.
+- Le titre principal des fiches utilise `Dancing Script` via une variable CSS, avec une règle plus spécifique que la typographie générique des titres.
 - Footer éditorial partagé dans le layout racine : identité cohérente, liens d’exploration et copyright dynamique. Aucun lien légal n’est affiché tant que les pages correspondantes ne sont pas définies.
 - Les courbes et tableaux statistiques utilisent uniquement des valeurs inventées, signalées explicitement comme fictives ; aucune donnée INSEE réelle n'est encore intégrée.
 - Pas encore de données éditoriales Supabase ni de catalogue vérifié prêt à publication.
@@ -24,6 +24,10 @@
 - La PR #7 est fusionnée dans `main`. La CI a validé lint, TypeScript et build après correction des erreurs ESLint.
 - Le déploiement de production correspondant est marqué READY sur Vercel.
 - Des vulnérabilités de dépendances signalées précédemment restent à examiner ; ne pas lancer `npm audit fix --force` sans analyse.
+
+## Conventions d’interface
+- L’accueil et les fiches prénom partagent le composant `SiteHeader` ; seules les destinations de navigation varient.
+- Les espacements de sections et la séparation avant le footer sont définis par des variables CSS responsive. Le footer reste rendu une seule fois par le layout racine.
 
 ## Documentation
 - Décision actée : documentation du projet en français ; conventions de code et identifiants techniques en anglais.
