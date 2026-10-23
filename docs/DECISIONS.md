@@ -38,5 +38,8 @@ Ne conserver que les décisions structurantes encore utiles.
 ## D-012 — Langue de la documentation et du code
 **Statut : décision adoptée ; harmonisation documentaire à planifier.** La documentation du projet, y compris `AGENTS.md`, le `README.md` et les documents canoniques, doit être rédigée en français. Les conventions de code restent en anglais : noms de composants, variables, fonctions, types et identifiants techniques. Garder les commandes, API et termes techniques exacts lorsqu'une traduction nuirait à leur précision. Le chantier complet est suivi dans [l'issue #8](https://github.com/Nabouna32/Namesia/issues/8) et sera traité après la résolution des problèmes de dépendances/CI en cours.
 
+## D-014 — Typographie signature des fiches prénom
+**Statut : adopté.** Le prénom principal utilise une écriture manuscrite élégante, limitée au titre de la fiche. Les titres de sections et les textes conservent la typographie de lecture ; le rendu reste responsive et lisible.
+
 ## D-013 — Footer éditorial partagé
 **Statut : adopté.** Le layout racine rend un composant de footer commun à toutes les pages. Il réunit identité de marque, navigation vers des sections existantes et copyright dynamique ; ne pas afficher de liens légaux inactifs ni assimiler le copyright à une conformité juridique.
