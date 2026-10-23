@@ -145,6 +145,13 @@ function DemoStatistics({ entry }: { entry: DemoName }) {
   }).join(" ");
   return <section className="profile-section stats-profile" id="statistiques">
     <div className="profile-section-heading"><p className="eyebrow">📈 ÉVOLUTION DU PRÉNOM</p><h2>Quelques chiffres, <em>pour l'exemple.</em></h2></div>
+    <details className="stats-accordion">
+      <summary>
+        <span className="stats-accordion-icon" aria-hidden="true">↗</span>
+        <span className="stats-accordion-copy"><strong>Explorer les chiffres de démonstration</strong><small>Données fictives · Courbe et tableau détaillé</small></span>
+        <span className="stats-accordion-chevron" aria-hidden="true">＋</span>
+      </summary>
+      <div className="stats-accordion-content">
     <div className="stats-demo-warning"><strong>DONNÉES ENTIÈREMENT FICTIVES</strong><span>Ces nombres sont inventés pour tester l'affichage. Ils ne proviennent pas de l'INSEE et ne doivent pas être interprétés comme des statistiques réelles.</span></div>
     <div className="stats-kpis">
       <article><span>Année la plus récente de la maquette</span><strong>{values[values.length - 1].year}</strong><small>Année illustrative</small></article>
@@ -160,6 +167,8 @@ function DemoStatistics({ entry }: { entry: DemoName }) {
     </div>
     <div className="stats-table-wrap"><table className="stats-table"><caption>Tableau des valeurs inventées pour tester la mise en page</caption><thead><tr><th>Année</th><th>Naissances fictives</th><th>Statut</th></tr></thead><tbody>{values.map((item) => <tr key={item.year}><td>{item.year}</td><td>{item.births.toLocaleString("fr-FR")}</td><td><span className="fake-data-label">Donnée fictive</span></td></tr>)}</tbody></table></div>
     <p className="stats-source-note">Source : aucune. Jeu de données local créé uniquement pour la démonstration. Les données officielles seront intégrées plus tard à partir des fichiers INSEE téléchargés et contrôlés.</p>
+      </div>
+    </details>
   </section>;
 }
 
