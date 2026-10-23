@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities -- French editorial copy uses natural apostrophes throughout JSX text. */
 import Link from "next/link";
-import SiteHeader from "@/components/SiteHeader";
 import { useEffect, useMemo, useState } from "react";
 type ElementKey = "feu" | "eau" | "air" | "terre" | "cosmos";
 type NameEntry = { name:string; origin:string; meaning:string; element:ElementKey; color:string; emoji:string; poetic:string; story:string; variants:string[]; personality:string };
@@ -20,7 +19,6 @@ const [query,setQuery]=useState("");const [active,setActive]=useState<ElementKey
 const results=useMemo(()=>{const q=query.trim().toLocaleLowerCase("fr");return names.filter(n=>(!q||[n.name,n.origin,n.meaning,n.element].some(v=>v.toLocaleLowerCase("fr").includes(q)))&&(active==="tout"||n.element===active));},[query,active]);
 const pick=(v:ElementKey|"tout")=>{setActive(v);document.getElementById("decouvrir")?.scrollIntoView({behavior:"smooth",block:"start"});};
 return <main className="site-shell">
-<SiteHeader variant="home" />
 <section className="hero"><div className="hero-glow glow-one"/><div className="hero-glow glow-two"/><div className="hero-copy"><p className="eyebrow"><span aria-hidden="true">✦</span> DÉCOUVRIR LES PRÉNOMS</p><h1>Tout savoir sur<br/><em>un prénom.</em></h1><p className="hero-description">Origines, significations, histoire et symboles : explorez les prénoms et découvrez ce qui les rend uniques.</p><a className="primary-cta" href="#decouvrir">Rechercher un prénom <span>↗</span></a><div className="hero-note">Des repères culturels et une part d’imaginaire</div></div>
 <div className="hero-universe" aria-label="Illustration cosmique de Namesia"><div className="orbit orbit-a"/><div className="orbit orbit-b"/><div className="orbit orbit-c"/><div className="planet planet-main">✦</div><div className="planet planet-peach"/><div className="planet planet-blue"/><div className="planet planet-lilac"/><div className="universe-label label-top">origines</div><div className="universe-label label-bottom">symbolique</div><div className="hero-name-card"><small>EXEMPLE DE FICHE</small><strong>Benjamin</strong><span>La lumière d'un nouveau jour</span><i>✦　✧　✦</i></div></div><a className="scroll-cue" href="#roue">↓　Faites défiler pour explorer</a></section>
 <section className="section-wrap wheel-section" id="roue"><div className="section-intro"><p className="eyebrow"><span aria-hidden="true">🧭</span> EXPLORATION</p><h2>Explorer par <em>élément</em></h2><p>Choisissez un élément pour filtrer les prénoms associés à cet univers symbolique.</p></div>
