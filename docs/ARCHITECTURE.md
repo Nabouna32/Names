@@ -10,6 +10,10 @@
 - `SiteFooter` est rendu par le layout racine et partagé par l’accueil et les fiches prénom ; son contenu et son style sont définis à un seul endroit.
 - Statistiques INSEE et personnalités vérifiées non intégrées.
 
+## Conventions de mise en page
+- `SiteHeader` est partagé entre l’accueil et les fiches prénom ; les variantes ne changent que les liens et l’alignement.
+- Les espacements verticaux des sections et la respiration avant le footer utilisent des variables CSS communes et responsive.
+
 ## Cible provisoire
 - Next.js pour les routes, le rendu et le SEO.
 - Supabase/Postgres pour fiches, formes de prénoms, contenus sourcés, symboles, associations éditoriales, personnalités et statistiques après validation du modèle.
