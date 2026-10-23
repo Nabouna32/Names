@@ -14,7 +14,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Ne pas exposer dans l’interface les libellés internes de conception (« fiche prénom », « maquette », « en construction »). Expliquer les limites des données avec des formulations éditoriales claires, sans présenter des contenus non vérifiés comme des faits établis.
 - Présenter au maximum 8 personnalités pertinentes par prénom, si les sources et la notoriété le justifient ; préciser les domaines et professions.
 - Présenter les statistiques INSEE avec chiffres clés, courbe interactive et tableau consultable lorsque les données sont intégrées.
-- Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité.
+- Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité ; conserver un contraste suffisant sur les vignettes colorées dans les deux thèmes.
 - Préserver une ambiance chaleureuse, immersive, colorée et poétique : Namesia ne doit pas ressembler à une encyclopédie austère.
 
 ## Navigation et identité de marque
