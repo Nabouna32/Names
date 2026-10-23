@@ -26,7 +26,7 @@
 - Des vulnérabilités de dépendances signalées précédemment restent à examiner ; ne pas lancer `npm audit fix --force` sans analyse.
 
 ## Conventions d’interface
-- Le layout racine rend un header commun ; les fiches prénom ont une barre sticky avec fil d’Ariane, ancres et état actif. Vérification visuelle mobile encore à faire, les previews Vercel étant désactivées.
+- Le fil d’Ariane est intégré au bloc de présentation du prénom ; la barre sticky opaque contient uniquement les ancres stylisées en pastilles, avec état actif et défilement horizontal mobile. Vérification visuelle mobile encore à faire, les previews Vercel étant désactivées.
 - Les espacements de sections et la séparation avant le footer sont définis par des variables CSS responsive. Le footer reste rendu une seule fois par le layout racine.
 
 ## Documentation
