@@ -15,6 +15,7 @@
 - Cartes symboliques et fiche exploratoire pour illustrer le parcours.
 - Les contenus et associations sont des exemples de démonstration, non vérifiés.
 - Pages prénom via `/prenoms/[slug]`, avec des fiches de démonstration pour six prénoms.
+- Le titre principal des fiches avait un conflit CSS : `.profile-hero h1` imposait Georgia via le raccourci `font`, qui pouvait écraser la police cursive fournie par `next/font`. Le correctif proposé applique explicitement `Dancing Script` via une variable CSS ; sa validation attend les contrôles de la PR.
 - Footer éditorial partagé dans le layout racine : identité cohérente, liens d’exploration et copyright dynamique. Aucun lien légal n’est affiché tant que les pages correspondantes ne sont pas définies.
 - Les courbes et tableaux statistiques utilisent uniquement des valeurs inventées, signalées explicitement comme fictives ; aucune donnée INSEE réelle n'est encore intégrée.
 - Pas encore de données éditoriales Supabase ni de catalogue vérifié prêt à publication.
