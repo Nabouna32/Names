@@ -7,11 +7,13 @@
 - Accueil interactif : recherche locale, filtre par élément, roue symbolique, aperçu de fiche et bascule clair/sombre.
 - Prénoms, variantes, textes et symboles codés localement ; ce n'est pas un catalogue vérifié.
 - Aucun accès applicatif à Supabase, aucune migration, authentification ou API métier.
-- `SiteFooter` est rendu par le layout racine et partagé par l’accueil et les fiches prénom ; son contenu et son style sont définis à un seul endroit.
+- Le header global et le footer sont rendus par le layout racine et partagés sur toutes les routes.
+- Les fiches prénom affichent leur fil d’Ariane et leur navigation interne juste au-dessus du héros ; le prénom stylisé reste le titre principal de la fiche.
 - Statistiques INSEE et personnalités vérifiées non intégrées.
 
 ## Conventions de mise en page
-- `SiteHeader` est partagé entre l’accueil et les fiches prénom ; les variantes ne changent que les liens et l’alignement.
+- Le header global reste identique sur toutes les pages : identité Namesia, navigation générale et bascule de thème.
+- Les fiches gardent une navigation contextuelle séparée, avec fil d’Ariane et liens d’ancrage.
 - Les espacements verticaux des sections et la respiration avant le footer utilisent des variables CSS communes et responsive.
 
 ## Cible provisoire
