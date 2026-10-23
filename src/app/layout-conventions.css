@@ -68,6 +68,10 @@
   padding-block: var(--space-section-block);
 }
 
+.profile-section {
+  padding-top: var(--space-section-block);
+}
+
 .site-footer {
   margin-top: 0;
 }
