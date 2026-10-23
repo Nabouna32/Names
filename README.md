@@ -1,9 +1,8 @@
 # Namesia
 
-Namesia est un site de découverte des prénoms : explorer leurs origines, significations, histoires et usages. L'IA peut aider à préparer les fiches éditoriales en coulisses ; le site lui-même n'est pas un assistant IA.
+Namesia est un univers de découverte des prénoms entre histoire, repères culturels et symbolisme poétique. L'expérience vise une identité chaleureuse, immersive et colorée, avec roue des éléments et thèmes clair/sombre. Le site n'est pas un assistant IA destiné aux visiteurs.
 
 ## Développement
-
 Prérequis : Node.js 24+ et npm.
 
 ```bash
@@ -16,15 +15,11 @@ Vérifications : `npm run lint`, `npm run typecheck`, `npm run build`.
 Déploiement Vercel : [namesia.vercel.app](https://namesia.vercel.app).
 
 ## Documentation canonique
-
 - [Vision produit](docs/PRODUCT.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Décisions](docs/DECISIONS.md)
 - [État du projet](docs/STATUS.md)
 - [Guide agents et méthode de travail](AGENTS.md)
 
-## Contribution au projet
-
-Ne pas modifier directement `main`. Toute modification, y compris documentaire, se fait sur une branche dédiée et passe par une pull request. Chaque tâche significative commence par une remise à plat du besoin et un challenge de la solution, puis met à jour les documents canoniques concernés dans la même PR.
-
-Les exemples de prénoms de l'interface actuelle sont des données de démonstration, pas un catalogue éditorial vérifié. Supabase n'est pas encore connecté à l'application.
+## Contribution
+Ne pas modifier directement main. Toute modification passe par une branche dédiée et une pull request. La maquette utilise des exemples locaux non vérifiés. Supabase n'est pas encore intégré.

@@ -1,42 +1,39 @@
 # Vision produit — Namesia
 
-**Statut :** direction produit initiale ; les fonctionnalités non présentes restent des pistes.
+**Statut :** direction produit adoptée ; les fiches et données actuelles restent une maquette de démonstration.
 
 ## Promesse
-Namesia est un site de découverte des prénoms. Il aide à explorer leurs origines, significations, histoires, variantes et usages culturels avec des fiches utiles, lisibles et aussi fiables que possible.
+Namesia est un univers de découverte des prénoms, à parts équilibrées entre contenu factuel et exploration symbolique. Le site mêle histoire, étymologie et repères culturels à des correspondances poétiques, une navigation par éléments, des variantes, des personnalités et des statistiques de popularité sourcées.
 
-Le nom associe « Names » (prénoms en anglais) et « IA ». L'IA peut servir à préparer ou structurer le contenu éditorial en coulisses ; **le site lui-même n'est pas un produit d'IA**. Il ne faut pas le présenter comme un chatbot, un générateur interactif ou une expérience qui nécessite l'IA côté visiteur.
+L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assistant IA destiné aux visiteurs.
 
-## Public
-Le public visé est toute personne curieuse des prénoms, notamment les futurs parents, sans limiter l'expérience à ce seul groupe. La priorité exacte des publics et les besoins à traiter en premier restent à valider avec les premières décisions produit.
-
-## Expérience recherchée
-- Trouver rapidement un prénom via une recherche claire.
-- Comprendre ce que l'on sait de ce prénom grâce à une fiche structurée.
-- Découvrir des prénoms apparentés ou d'autres pistes de navigation pertinentes.
-- Lire un contenu éditorial accueillant, précis et nuancé, sans friction inutile.
-
-Une fiche pourra inclure origine, étymologie, signification, prononciation, variantes, diminutifs, histoire, usages géographiques ou culturels, popularité contextualisée et sources. Ces champs sont des pistes de conception, pas des fonctionnalités livrées ni une promesse que chaque champ sera toujours connu.
+## Expérience
+- Explorer les prénoms par recherche, prénoms apparentés et roue des éléments symboliques (feu, eau, air, terre, cosmos).
+- Découvrir une fiche organisée en panneaux éditoriaux cohérents, avec des repères visuels/emoji pour les sections culturelles et un univers symbolique illustré par des vignettes colorées.
+- Naviguer entre variantes et formes apparentées par des pastilles cliquables.
+- Présenter au maximum 8 personnalités pertinentes par prénom, si les sources et la notoriété le justifient ; préciser les domaines et professions.
+- Présenter les statistiques INSEE avec chiffres clés, courbe interactive et tableau consultable lorsque les données sont intégrées.
+- Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité.
+- Préserver une ambiance chaleureuse, immersive, colorée et poétique : Namesia ne doit pas ressembler à une encyclopédie austère.
 
 ## Principes éditoriaux
-- Distinguer les faits étayés, les traditions, les hypothèses et les interprétations.
-- Nuancer les étymologies lorsque les sources divergent ; ne pas inventer de certitude pour rendre une fiche plus séduisante.
-- Documenter la provenance des affirmations importantes et préférer les sources fiables.
-- Contextualiser popularité et tendances par pays, période et source.
-- Distinguer variantes, diminutifs et prénoms apparentés au lieu de les confondre.
-- L'utilisation de l'IA pour préparer le contenu n'est pas une validation factuelle : une politique de vérification éditoriale reste nécessaire.
-- Préférer une information utile et vérifiable à une fiche artificiellement longue.
+- Séparer faits documentés, traditions culturelles, hypothèses et créations poétiques.
+- Les associations symboliques et les « vocations imaginaires » sont des propositions créatives, jamais des vérités scientifiques ni des prédictions sur les personnes.
+- Ne pas présenter les traits de personnalité attribués aux prénoms comme des faits établis.
+- Nuancer les étymologies concurrentes ; afficher saints et fêtes seulement lorsqu'ils sont pertinents et sourcés.
+- Distinguer variantes, diminutifs et prénoms apparentés.
+- Les personnalités sont vérifiables, variées quand c'est pertinent, et limitées à 8 par fiche.
+- Les statistiques précisent source, période et périmètre. Avant l'intégration INSEE, des jeux entièrement fictifs peuvent servir à tester les graphiques et tableaux, à condition d'être signalés clairement comme inventés et de ne jamais être présentés comme des chiffres officiels.
+- Les correspondances élémentaires sont une taxonomie éditoriale, pas une classification objective.
 
-## Direction de marque — hypothèse de travail
-Explorer une identité éditoriale chaleureuse, moderne, élégante et légèrement évocatrice d'un univers à découvrir. Éviter à la fois le catalogue froid et les codes visuels IA/cosmiques omniprésents. La lisibilité, la confiance et le contenu priment sur les effets décoratifs. La signature « Un prénom, mille histoires » est une piste, pas encore une décision définitive.
+## Direction visuelle
+- Palette expressive avec dégradés irisés et couleurs associées aux vignettes symboliques ; sur les fiches, panneaux doux et arrondis pour structurer la lecture sans encadrer chaque paragraphe.
+- Emojis comme repères de catégories (✝️ saints, ⭐ personnalités, 📈 statistiques), sans remplacer les titres accessibles.
+- Thèmes clair et sombre, formes douces et motifs célestes dosés.
+- La poésie et la couleur coexistent avec une typographie lisible et une information factuelle structurée.
 
-## État et limites
-Le prototype initial est une interface de recherche alimentée par quelques exemples locaux. Ces exemples ne constituent pas un catalogue éditorial vérifié. Aucun assistant IA destiné aux visiteurs n'est dans le périmètre produit défini à ce stade.
+## État actuel
+Le prototype visuel utilise des exemples locaux illustratifs. Les contenus, variantes et associations ne sont pas validés. La roue est interactive, mais ses correspondances sont provisoires. Les sources, célébrités vérifiées et statistiques INSEE ne sont pas connectées à une base de données.
 
-## Questions structurantes ouvertes
-- Quels besoins et parcours prioriser entre recherche d'un prénom pour un enfant et curiosité générale ?
-- Quel niveau de détail et quelles sources exiger pour chaque type d'information ?
-- Comment représenter plusieurs origines ou étymologies concurrentes ?
-- Quelle place donner aux données de popularité et comment les sourcer ?
-- Comment distinguer variantes, diminutifs et prénoms apparentés ?
-- Quel processus de génération, de vérification et de mise à jour éditoriale adopter avant publication ?
+## Prochaine étape
+Valider la direction visuelle et les parcours, puis concevoir le modèle éditorial et la migration Supabase. Ne pas confondre la maquette avec un catalogue prêt à publication.
