@@ -14,11 +14,13 @@ const names:NameEntry[]=[
 {name:"Noah",origin:"Hébraïque",meaning:"Traditionnellement rapproché du repos et du réconfort.",element:"cosmos",color:"blue",emoji:"🌙",poetic:"Noah évoque une nuit paisible sous les étoiles, un silence où l'on reprend son souffle avant le prochain voyage.",story:"Noah est la forme utilisée notamment en anglais pour le prénom biblique Noé.",variants:["Noé","Noa","Noach"],personality:"Noah et ses formes proches sont employés dans plusieurs cultures ; les usages varient selon les pays."}];
 const symbols=[{emoji:"🌅",label:"Le moment",title:"L'heure dorée",text:"Benjamin, c'est la lumière qui arrive sans bruit et donne au jour une promesse nouvelle.",tone:"amber"},{emoji:"🦊",label:"L'animal imaginaire",title:"Le renard",text:"Vif et attentif, il incarne ici l'art de trouver un chemin là où les autres voient une impasse.",tone:"coral"},{emoji:"🎨",label:"La couleur",title:"Ambre solaire",text:"Une chaleur douce, entre la lumière du matin et la mémoire des choses précieuses.",tone:"rainbow"},{emoji:"🌌",label:"L'astre",title:"Jupiter",text:"Un horizon vaste et généreux, choisi comme invitation à voir plus loin que le connu.",tone:"cosmos"}];
 
+function normalizeSearch(value: string) { return value.normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLocaleLowerCase("fr"); }
+
 export default function HomePage() {
  const [query,setQuery]=useState(""); const [element,setElement]=useState<ElementKey|"tout">("tout"); const [origin,setOrigin]=useState("tout");
  const normalize=(s:string)=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("fr");
  const q=normalize(query.trim()); const origins=Array.from(new Set(names.map(n=>n.origin)));
- const results=useMemo(()=>names.filter(n=>(!q||normalize([n.name,n.origin,n.meaning,n.element].join(" ")).includes(q))&&(element==="tout"||n.element===element)&&(origin==="tout"||n.origin===origin)),[q,element,origin]);
+ const results=useMemo(()=>names.filter(n=>(!q||normalizeSearch([n.name,n.origin,n.meaning,n.element].join(" ")).includes(q))&&(element==="tout"||n.element===element)&&(origin==="tout"||n.origin===origin)),[q,element,origin]);
  const reset=()=>{setQuery("");setElement("tout");setOrigin("tout");};
  return <main className="home-v2">
   <section className="discovery-hero" aria-labelledby="home-title"><div className="discovery-hero-copy">
