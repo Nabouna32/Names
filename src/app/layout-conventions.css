@@ -73,11 +73,9 @@
   white-space: nowrap;
 }
 
-.profile-breadcrumb a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
+.profile-breadcrumb a { display: inline-flex; align-items: center; gap: 5px; }
+.profile-breadcrumb a:first-child { color: var(--accent); }
+.profile-breadcrumb [aria-current="page"] { overflow: hidden; max-width: 180px; color: var(--ink); font-weight: 600; text-overflow: ellipsis; }
 
 .profile-breadcrumb a:first-child {
   color: var(--accent);
@@ -93,32 +91,62 @@
 
 /* The breadcrumb belongs to the hero; only section anchors remain sticky. */
 .profile-page-topline {
-  position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 8px;
-  width: 100%; margin: 0; padding: 12px max(5%, calc((100% - 1190px) / 2));
-  border-bottom: 1px solid var(--line); background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 12px max(5%, calc((100% - 1190px) / 2));
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
   box-shadow: 0 8px 24px color-mix(in srgb, var(--ink) 9%, transparent);
 }
-.profile-section-nav a {
-  display: inline-flex; min-height: 42px; align-items: center; justify-content: center; gap: 8px;
-  padding: 8px 15px 8px 9px; border: 1px solid var(--line); border-radius: 999px;
-  background: var(--paper); color: var(--muted); font-size: 12px; font-weight: 650; white-space: nowrap;
-  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
-}
 .profile-section-nav-number {
-  display: inline-grid; width: 22px; height: 22px; flex: 0 0 auto; place-items: center;
-  border-radius: 50%; background: color-mix(in srgb, var(--accent) 12%, var(--paper));
-  color: var(--accent); font-size: 9px; font-weight: 800;
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 12%, var(--paper));
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 800;
+}
+.profile-section-nav a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 15px 8px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+  white-space: nowrap;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 .profile-section-nav a:hover {
   border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
-  background: color-mix(in srgb, var(--accent) 7%, var(--paper)); color: var(--accent); transform: translateY(-1px);
+  background: color-mix(in srgb, var(--accent) 7%, var(--paper));
+  color: var(--accent);
+  transform: translateY(-1px);
 }
 .profile-section-nav a.is-active {
-  border-color: var(--accent); background: var(--accent); color: var(--bg);
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
   box-shadow: 0 5px 14px color-mix(in srgb, var(--accent) 25%, transparent);
 }
 .profile-section-nav a.is-active .profile-section-nav-number {
-  background: color-mix(in srgb, var(--bg) 18%, transparent); color: inherit;
+  background: color-mix(in srgb, var(--bg) 18%, transparent);
+  color: inherit;
 }
 
 .profile-section[id] {
