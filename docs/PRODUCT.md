@@ -11,6 +11,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Explorer les prénoms par recherche, prénoms apparentés et roue des éléments symboliques (feu, eau, air, terre, cosmos).
 - Découvrir une fiche organisée en panneaux éditoriaux cohérents, avec des repères visuels/emoji pour les sections culturelles et un univers symbolique illustré par des vignettes colorées.
 - Naviguer entre variantes et formes apparentées par des pastilles cliquables.
+- Ne pas exposer dans l’interface les libellés internes de conception (« fiche prénom », « maquette », « en construction »). Expliquer les limites des données avec des formulations éditoriales claires, sans présenter des contenus non vérifiés comme des faits établis.
 - Présenter au maximum 8 personnalités pertinentes par prénom, si les sources et la notoriété le justifient ; préciser les domaines et professions.
 - Présenter les statistiques INSEE avec chiffres clés, courbe interactive et tableau consultable lorsque les données sont intégrées.
 - Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité.

@@ -19,10 +19,9 @@
 - Pas encore de données éditoriales Supabase ni de catalogue vérifié prêt à publication.
 
 ## Vérifications locales et CI
-- Sur le poste de développement, `npm ci`, `npm run lint` et `npm run typecheck` ont terminé sans erreur ; le serveur `npm run dev` démarre.
-- L'installation signale des conflits de compatibilité entre ESLint 10 et plusieurs plugins ESLint, cinq vulnérabilités de sévérité élevée et un script d'installation de `unrs-resolver` à examiner.
-- La CI GitHub de la PR en cours est rouge ; son erreur doit être diagnostiquée et corrigée avant toute fusion.
-- Ne pas exécuter `npm audit fix --force` avant d'avoir examiné les dépendances concernées.
+- La PR #7 est fusionnée dans `main`. La CI a validé lint, TypeScript et build après correction des erreurs ESLint.
+- Le déploiement de production correspondant est marqué READY sur Vercel.
+- Des vulnérabilités de dépendances signalées précédemment restent à examiner ; ne pas lancer `npm audit fix --force` sans analyse.
 
 ## Documentation
 - Décision actée : documentation du projet en français ; conventions de code et identifiants techniques en anglais.
@@ -32,11 +31,10 @@
 - Les liens des fiches de démonstration permettent de naviguer entre les prénoms connus ; les variantes non prises en charge restent des libellés sans page.
 - Les filtres et la roue reposent sur des associations de démonstration.
 - Aucun chiffre INSEE n'est affiché : l'intégration devra utiliser des données sourcées.
-- La fiche prénom utilise des panneaux éditoriaux arrondis pour l'histoire, la symbolique, les personnalités et les statistiques ; rendu navigateur et contrôles après ces ajustements non vérifiés.
+- Les fiches prénom utilisent des panneaux éditoriaux arrondis. Les libellés de brouillon sont retirés de l'interface publique ; les données statistiques fictives restent explicitement signalées comme telles.
 
 ## Prochaines étapes
-1. Diagnostiquer et corriger les avertissements de dépendances ainsi que l'échec de la CI.
-2. Ajuster l'identité et les parcours après revue du prototype.
-3. Définir le modèle de contenu, les sources, variantes, symboles et personnalités.
-4. Préparer la migration Supabase et les données officielles.
-5. Implémenter les vraies pages prénom et tester le parcours.
+1. Ajuster l'identité et les parcours à partir des retours visuels.
+2. Définir le modèle de contenu, les sources, variantes, symboles et personnalités.
+3. Préparer la migration Supabase et les données officielles.
+4. Remplacer progressivement les contenus de démonstration par des contenus éditoriaux vérifiés.
