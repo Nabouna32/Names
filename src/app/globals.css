@@ -352,10 +352,11 @@ body{font-size:16px;line-height:1.65}
 .site-footer-legal{display:flex;gap:16px;flex-wrap:wrap}
 @media(max-width:680px){.site-footer{padding:28px 5% 18px}.site-footer-inner{grid-template-columns:1fr 1fr;gap:25px 18px}.site-footer-brand{grid-column:1/-1}.site-footer-bottom{align-items:flex-start;flex-direction:column;gap:10px;margin-top:22px}.site-footer-legal{gap:12px}}
 
-/* Fiche prénom : écriture signature réservée au nom principal. */
+/* Fiche prénom : la cursive du nom doit primer sur la règle générique du h1. */
 .profile-hero h1.profile-name-title{
+  font-family:var(--font-name-script),cursive;
   font-size:clamp(66px,7.4vw,100px);
-  font-weight:600;
+  font-weight:500;
   line-height:1.08;
   letter-spacing:0;
   overflow-wrap:anywhere;
