@@ -19,7 +19,8 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Sur les fiches prénom, utiliser Dancing Script pour le prénom principal, en appliquant explicitement sa famille CSS afin qu’elle ne soit pas écrasée par la règle générique des titres ; garder les autres titres et contenus dans la typographie de lecture.
 
 ## Navigation et identité de marque
-- Le footer est partagé entre les pages et termine l’expérience avec une signature éditoriale cohérente, des liens d’exploration fonctionnels et une attribution de copyright.
+- Le header et le footer sont des composants communs aux pages ; leurs variantes restent limitées au contexte de navigation. Les espacements entre sections et avant le footer suivent des règles responsive partagées.
+- Le footer termine l’expérience avec une signature éditoriale cohérente, des liens d’exploration fonctionnels et une attribution de copyright.
 - N’afficher des liens légaux ou de confidentialité que lorsqu’ils mènent à des informations réelles et adaptées au service ; le copyright ne remplace pas les obligations légales.
 
 ## Principes éditoriaux
