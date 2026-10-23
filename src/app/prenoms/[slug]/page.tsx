@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -168,7 +169,7 @@ export default async function NameProfilePage({ params }: { params: Promise<{ sl
   if (!entry) notFound();
   const related = demoNames.filter((item) => item.slug !== entry.slug && (item.element === entry.element || item.origin === entry.origin)).slice(0, 3);
   return <main className="profile-page">
-    <header className="profile-topbar"><Link className="wordmark" href="/">namesia<span>✳</span></Link><nav aria-label="Navigation de la fiche"><a href="#histoire">Histoire</a><a href="#symboles">Symboles</a><a href="#statistiques">Statistiques</a></nav><Link className="profile-back-link" href="/">← Explorer les prénoms</Link></header>
+    <header className="profile-topbar"><Link className="wordmark" href="/">namesia<span>✳</span></Link><nav aria-label="Navigation de la fiche"><a href="#histoire">Histoire</a><a href="#symboles">Symboles</a><a href="#statistiques">Statistiques</a></nav><div className="profile-topbar-actions"><ThemeToggle /><Link className="profile-back-link" href="/">← Explorer les prénoms</Link></div></header>
     <section className={`profile-hero tone-${entry.tone}`}>
       <div className="profile-hero-glow" aria-hidden="true" />
       <div className="profile-hero-copy"><p className="eyebrow">UN PRÉNOM · UN MONDE À DÉCOUVRIR</p><p className="profile-kicker">{entry.emoji} PRÉNOM {entry.element.toLocaleUpperCase("fr-FR")}</p><h1>{entry.name}<span>.</span></h1><p className="profile-meaning">{entry.meaning}</p><div className="profile-facts"><span><small>Origine</small><strong>{entry.origin}</strong></span><span><small>Élément imaginaire</small><strong>{entry.element}</strong></span><span><small>Univers</small><strong>Poétique & culturel</strong></span></div></div>
