@@ -26,7 +26,7 @@
 - Des vulnérabilités de dépendances signalées précédemment restent à examiner ; ne pas lancer `npm audit fix --force` sans analyse.
 
 ## Conventions d’interface
-- L’accueil et les fiches prénom partagent le composant `SiteHeader` ; seules les destinations de navigation varient.
+- Le layout racine rend un header commun ; les fiches prénom gardent leur fil d’Ariane et leur navigation contextuelle au-dessus du héros.
 - Les espacements de sections et la séparation avant le footer sont définis par des variables CSS responsive. Le footer reste rendu une seule fois par le layout racine.
 
 ## Documentation
