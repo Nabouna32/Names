@@ -1,0 +1,164 @@
+/* Shared layout tokens and primitives. Keep page-specific differences limited to navigation content. */
+:root {
+  --space-section-block: clamp(3.5rem, 7vw, 5.25rem);
+  --space-footer-gap: clamp(2rem, 5vw, 4rem);
+  --content-max: 1190px;
+  --header-height: 76px;
+}
+
+.site-header {
+  height: var(--header-height);
+  padding-inline: var(--header-gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  position: relative;
+  z-index: 4;
+}
+
+.site-header--global {
+  --header-gutter: max(5%, calc((100% - 1240px) / 2));
+}
+
+.site-header-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 28px);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.site-header-nav a:hover,
+.profile-back-link:hover,
+.profile-breadcrumb a:hover,
+.profile-section-nav a:hover {
+  color: var(--accent);
+}
+
+.site-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  min-width: max-content;
+}
+
+.site-header-actions .theme-toggle {
+  flex-shrink: 0;
+}
+
+.profile-back-link {
+  font-size: 12px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.profile-page-topline {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 22px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.profile-breadcrumb,
+.profile-section-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.profile-breadcrumb {
+  color: var(--muted);
+}
+
+.profile-breadcrumb [aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.profile-section-nav {
+  gap: clamp(14px, 2vw, 24px);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.site-shell,
+.profile-page {
+  padding-bottom: var(--space-footer-gap);
+}
+
+.section-wrap {
+  max-width: var(--content-max);
+  padding-block: var(--space-section-block);
+}
+
+.profile-section {
+  padding-top: var(--space-section-block);
+}
+
+.site-footer {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .site-header-nav {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --space-section-block: clamp(3.25rem, 9vw, 4rem);
+    --space-footer-gap: clamp(2rem, 7vw, 2.5rem);
+  }
+
+  .site-header {
+    height: 70px;
+    gap: 10px;
+  }
+
+    .site-header-nav {
+    display: none;
+  }
+
+  .site-header .wordmark {
+    font-size: 28px;
+  }
+
+  .profile-page-topline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 5% 0;
+  }
+
+  .profile-breadcrumb,
+  .profile-section-nav {
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .site-header-actions {
+    gap: 9px;
+  }
+
+  .site-header .theme-toggle {
+    padding: 8px 10px;
+  }
+
+  .site-header .theme-label {
+    display: none;
+  }
+
+    .section-wrap {
+    padding-inline: 5%;
+  }
+}

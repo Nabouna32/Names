@@ -42,4 +42,7 @@ Ne conserver que les décisions structurantes encore utiles.
 **Statut : adopté.** Le layout racine rend un composant de footer commun à toutes les pages. Il réunit identité de marque, navigation vers des sections existantes et copyright dynamique ; ne pas afficher de liens légaux inactifs ni assimiler le copyright à une conformité juridique.
 
 ## D-014 — Typographie signature des fiches prénom
-**Statut : adopté, correction CSS en cours de validation.** Utiliser `Dancing Script` uniquement pour le prénom principal. La famille de police doit être appliquée explicitement via une variable CSS sur le titre : la règle générique `.profile-hero h1` définit une police avec le raccourci `font` et peut écraser la famille fournie par `next/font`. Les autres titres et textes gardent la typographie de lecture ; vérifier les prénoms longs et les tailles mobiles.
+**Statut : adopté.** Utiliser `Dancing Script` uniquement pour le prénom principal. La famille de police doit être appliquée explicitement via une variable CSS sur le titre : la règle générique `.profile-hero h1` définit une police avec le raccourci `font` et peut écraser la famille fournie par `next/font`. Les autres titres et textes gardent la typographie de lecture ; vérifier les prénoms longs et les tailles mobiles.
+
+## D-015 — Conventions communes de mise en page
+**Statut : adopté.** Le layout racine rend un header commun (identité, navigation générale et thème) ainsi que le footer. Les fiches prénom gardent leur fil d’Ariane et leurs liens internes dans une barre contextuelle au-dessus du héros ; le prénom stylisé reste le titre principal. Les espacements et la séparation avant le footer reposent sur des variables CSS responsive.
