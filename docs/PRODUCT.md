@@ -17,6 +17,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité ; conserver un contraste suffisant sur les vignettes colorées dans les deux thèmes.
 - Préserver une ambiance chaleureuse, immersive, colorée et poétique : Namesia ne doit pas ressembler à une encyclopédie austère.
 - Sur les fiches prénom, utiliser Dancing Script pour le prénom principal, en appliquant explicitement sa famille CSS afin qu’elle ne soit pas écrasée par la règle générique des titres ; garder les autres titres et contenus dans la typographie de lecture.
+- Garder le fil d’Ariane et les ancres des fiches prénom dans une barre sticky compacte, lisible en clair/sombre et utilisable au clavier comme au tactile ; elle reste dans les limites de la fiche et ne recouvre pas le footer.
 
 ## Navigation et identité de marque
 - Le header et le footer sont des composants communs aux pages ; leurs variantes restent limitées au contexte de navigation. Les espacements entre sections et avant le footer suivent des règles responsive partagées.

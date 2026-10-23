@@ -8,12 +8,12 @@
 - Prénoms, variantes, textes et symboles codés localement ; ce n'est pas un catalogue vérifié.
 - Aucun accès applicatif à Supabase, aucune migration, authentification ou API métier.
 - Le header global et le footer sont rendus par le layout racine et partagés sur toutes les routes.
-- Les fiches prénom affichent leur fil d’Ariane et leur navigation interne juste au-dessus du héros ; le prénom stylisé reste le titre principal de la fiche.
+- Les fiches prénom affichent une barre contextuelle sticky avec fil d’Ariane et ancres de section ; elle reste contenue dans la fiche pour ne pas recouvrir le footer. Le prénom stylisé reste le titre principal.
 - Statistiques INSEE et personnalités vérifiées non intégrées.
 
 ## Conventions de mise en page
 - Le header global reste identique sur toutes les pages : identité Namesia, navigation générale et bascule de thème.
-- Les fiches gardent une navigation contextuelle séparée, avec fil d’Ariane et liens d’ancrage.
+- La navigation contextuelle des fiches utilise `position: sticky`, un état actif basé sur les sections visibles et un défilement horizontal sur petit écran.
 - Les espacements verticaux des sections et la respiration avant le footer utilisent des variables CSS communes et responsive.
 
 ## Cible provisoire
