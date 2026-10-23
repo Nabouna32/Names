@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SiteHeader from "@/components/SiteHeader";
+import ProfilePageTopline from "@/components/ProfilePageTopline";
 import type { Metadata } from "next";
 import { Dancing_Script } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -181,7 +181,7 @@ export default async function NameProfilePage({ params }: { params: Promise<{ sl
   if (!entry) notFound();
   const related = demoNames.filter((item) => item.slug !== entry.slug && (item.element === entry.element || item.origin === entry.origin)).slice(0, 3);
   return <main className="profile-page">
-    <SiteHeader variant="profile" />
+    <ProfilePageTopline />
     <section className={`profile-hero tone-${entry.tone}`}>
       <div className="profile-hero-glow" aria-hidden="true" />
       <div className="profile-hero-copy"><p className="profile-kicker">{entry.element} · UNIVERS SYMBOLIQUE</p><h1 className={`profile-name-title ${nameScript.variable}`}>{entry.name}<span>.</span></h1><p className="profile-meaning">{entry.meaning}</p><div className="profile-facts"><span><small>Origine</small><strong>{entry.origin}</strong></span><span><small>Élément symbolique</small><strong>{entry.element}</strong></span></div></div>
