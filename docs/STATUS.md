@@ -14,7 +14,8 @@
 - Thèmes clair/sombre, recherche locale, filtres et roue interactive des éléments.
 - Cartes symboliques et fiche exploratoire pour illustrer le parcours.
 - Les contenus et associations sont des exemples de démonstration, non vérifiés.
-- Pages prénom dédiées en cours de prototype via `/prenoms/[slug]`, avec des fiches de démonstration pour six prénoms.
+- Pages prénom via `/prenoms/[slug]`, avec des fiches de démonstration pour six prénoms.
+- Footer éditorial partagé dans le layout racine : identité cohérente, liens d’exploration et copyright dynamique. Aucun lien légal n’est affiché tant que les pages correspondantes ne sont pas définies.
 - Les courbes et tableaux statistiques utilisent uniquement des valeurs inventées, signalées explicitement comme fictives ; aucune donnée INSEE réelle n'est encore intégrée.
 - Pas encore de données éditoriales Supabase ni de catalogue vérifié prêt à publication.
 
