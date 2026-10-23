@@ -42,4 +42,4 @@ Ne conserver que les décisions structurantes encore utiles.
 **Statut : adopté.** Le layout racine rend un composant de footer commun à toutes les pages. Il réunit identité de marque, navigation vers des sections existantes et copyright dynamique ; ne pas afficher de liens légaux inactifs ni assimiler le copyright à une conformité juridique.
 
 ## D-014 — Typographie signature des fiches prénom
-**Statut : adopté.** Le prénom principal utilise une écriture manuscrite élégante, limitée au titre de la fiche. Les titres de sections et les textes conservent la typographie de lecture ; le rendu reste responsive et lisible.
+**Statut : adopté.** Utiliser une cursive réellement attachée (`Satisfy`) uniquement pour le prénom principal. Les autres titres et textes gardent la typographie de lecture ; vérifier les prénoms longs et les tailles mobiles.
