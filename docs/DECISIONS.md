@@ -34,3 +34,6 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-011 — Challenge avant implémentation
 **Statut : règle de travail adoptée.** Repartir du besoin, comparer les options utiles et valider les choix structurels sans surcharger la discussion.
+
+## D-012 — Langue de la documentation et du code
+**Statut : décision adoptée ; harmonisation documentaire à planifier.** La documentation du projet, y compris `AGENTS.md`, le `README.md` et les documents canoniques, doit être rédigée en français. Les conventions de code restent en anglais : noms de composants, variables, fonctions, types et identifiants techniques. Garder les commandes, API et termes techniques exacts lorsqu'une traduction nuirait à leur précision. Le chantier complet est suivi dans [l'issue #8](https://github.com/Nabouna32/Namesia/issues/8) et sera traité après la résolution des problèmes de dépendances/CI en cours.
