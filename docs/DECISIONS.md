@@ -60,4 +60,4 @@ Ne conserver que les décisions structurantes encore utiles.
 
 
 ## D-019 — Regrouper les précisions éditoriales
-**Statut : adopté.** La page « À propos » centralise la démarche de Namesia et les limites générales des contenus. Le footer reste léger. Les fiches prénom affichent une seule note informative en bas, avec l’icône Info de Lucide et un fond bleu semi-transparent. Les avertissements spécifiques indispensables, notamment l’identification explicite des statistiques fictives, restent près des données concernées.
+**Statut : adopté.** La page « À propos » centralise la démarche de Namesia et les limites générales des contenus. Le footer reste léger. Les fiches prénom affichent une seule note informative en bas, avec le symbole d’information standard ℹ et un fond bleu semi-transparent. Les avertissements spécifiques indispensables, notamment l’identification explicite des statistiques fictives, restent près des données concernées.
