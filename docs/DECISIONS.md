@@ -53,3 +53,7 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-017 — Accueil fonctionnel, pas vitrine
 **Statut : adopté.** L’accueil sert d’abord à rechercher et explorer les prénoms. Ne pas y ajouter de blocs qui présentent le produit, détaillent le contenu d’une fiche ou annoncent des fonctionnalités à venir ; ces informations ont leur place dans les fiches ou les pages dédiées. Chaque section de l’accueil doit justifier sa place par une action ou un usage direct.
+
+
+## D-018 — Pas de démonstration de fiche sur l’accueil
+**Statut : adopté.** Ne pas afficher sur l’accueil une démonstration éditoriale centrée sur un prénom précis (par exemple Benjamin et sa symbolique). L’accueil sert à rechercher et explorer ; les exemples détaillés appartiennent aux fiches prénom.
