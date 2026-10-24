@@ -18,7 +18,7 @@ Ne conserver que les décisions structurantes encore utiles.
 **Statut : direction produit adoptée.** Viser un équilibre approximatif entre histoire/faits culturels et symbolisme poétique. Le site n'est pas un assistant IA.
 
 ## D-006 — Direction visuelle immersive et éditoriale
-**Statut : direction visuelle adoptée, à affiner par retours.** Palette irisée, vignettes colorées, emojis comme repères, roue des éléments et thèmes clair/sombre. Les fiches utilisent des panneaux arrondis cohérents sans encadrer chaque paragraphe. L’interface publique évite les libellés de brouillon et communique les limites des données avec des formulations éditoriales précises. Sur les cartes d’accueil, le genre repose sur un champ explicite, jamais sur une déduction. Le traitement retenu est un médaillon bleu circulaire placé à côté du prénom : l’élément reste en haut de la carte et le genre reste secondaire. Les symboles sont des SVG distincts pour éviter les ambiguïtés de rendu des glyphes de police ; les exemples doivent couvrir les trois genres, dont un prénom mixte comme Camille.
+**Statut : direction visuelle adoptée, à affiner par retours.** Palette irisée, vignettes colorées, emojis comme repères, roue des éléments et thèmes clair/sombre. Les fiches utilisent des panneaux arrondis cohérents sans encadrer chaque paragraphe. L’interface publique évite les libellés de brouillon et communique les limites des données avec des formulations éditoriales précises. Sur les cartes d’accueil, le genre repose sur un champ explicite, jamais sur une déduction. Le genre reste secondaire, dans un médaillon placé à côté du prénom ; sa couleur distingue les trois cas (bleu masculin, rose féminin, violet mixte). Chaque symbole est un SVG dédié, et le symbole mixte forme un dessin unique plutôt que deux icônes juxtaposées. L’élément reste séparé en haut de la carte.
 
 ## D-007 — Symbolisme et roue des éléments
 **Statut : concept adopté, associations à éditer.** Les symboles sont des interprétations créatives personnalisées ; les éléments sont une taxonomie de découverte, pas des vérités objectives.
@@ -61,3 +61,7 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-019 — Regrouper les précisions éditoriales
 **Statut : adopté.** La page « À propos » centralise la démarche de Namesia et les limites générales des contenus. Le footer reste léger. Les fiches prénom affichent une seule note informative en bas, avec le symbole d’information standard ℹ et un fond bleu semi-transparent. Les avertissements spécifiques indispensables, notamment l’identification explicite des statistiques fictives, restent près des données concernées.
+
+
+## D-010 — Composition des cartes prénom
+**Statut : adopté.** Les cartes suivent la référence visuelle validée : bandeau illustré ondulé, capsule de l’élément et emblème en haut, médaillon de genre, origine, signification avec repère feuille et bouton « Voir la fiche complète » intégrant livre et flèche. Les styles de bandeau couvrent eau, feu, air, terre et cosmos. La palette de genre (bleu, rose, violet) reste indépendante de la palette élémentaire. Les illustrations CSS sont des interprétations graphiques, non des données sémantiques supplémentaires.

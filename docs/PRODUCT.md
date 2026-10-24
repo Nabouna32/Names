@@ -9,7 +9,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 
 ## Expérience
 - Explorer les prénoms par recherche, prénoms apparentés et roue des éléments symboliques (feu, eau, air, terre, cosmos).
-- Sur les cartes de l’accueil, afficher le genre à partir d’une donnée déclarée ; ne jamais le déduire automatiquement du prénom. L’icône de genre est intégrée à côté du prénom dans un médaillon bleu circulaire et dessinée en SVG distinct selon le genre (masculin, féminin ou mixte) ; le genre reste une information secondaire, tandis que l’élément est présenté séparément en haut de la carte. Les données de démonstration couvrent les trois cas, notamment Camille comme prénom mixte. La pastille qui nomme l’élément utilise une couleur sémantique propre à cet élément (feu, eau, air, terre ou cosmos), indépendante de la couleur décorative attribuée à la fiche prénom.
+- Sur les cartes de l’accueil, reprendre la composition de référence : bandeau illustré et ondulé, capsule d’élément avec icône à gauche, emblème de marque à droite, médaillon de genre, prénom, origine, bloc « Signification » et bouton « Voir la fiche complète » avec livre à gauche et flèche à droite. Le bandeau varie selon les cinq éléments (eau, feu, air, terre, cosmos) ; le genre conserve sa palette indépendante (bleu masculin, rose féminin, violet mixte).
 - Découvrir une fiche organisée en panneaux éditoriaux cohérents, avec des repères visuels/emoji pour les sections culturelles et un univers symbolique illustré par des vignettes colorées.
 - Naviguer entre variantes et formes apparentées par des pastilles cliquables.
 - Ne pas exposer dans l’interface les libellés internes de conception (« fiche prénom », « maquette », « en construction »). Expliquer les limites des données avec des formulations éditoriales claires, sans présenter des contenus non vérifiés comme des faits établis.
@@ -38,7 +38,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Les correspondances élémentaires sont une taxonomie éditoriale, pas une classification objective.
 
 ## Direction visuelle
-- Palette expressive avec dégradés irisés et couleurs associées aux vignettes symboliques ; sur les fiches, panneaux doux et arrondis pour structurer la lecture sans encadrer chaque paragraphe.
+- Palette expressive avec dégradés illustrés propres aux cinq éléments ; cartes de prénoms à bandeau panoramique ondulé, capsule de catégorie, emblème de marque, médaillons de genre pastel et bouton contour avec icône de livre et flèche. Conserver ces détails sur toutes les cartes et adapter la composition au mobile. Sur les fiches, panneaux doux et arrondis pour structurer la lecture sans encadrer chaque paragraphe.
 - Emojis comme repères de catégories (✝️ saints, ⭐ personnalités, 📈 statistiques), sans remplacer les titres accessibles.
 - Thèmes clair et sombre, formes douces et motifs célestes dosés.
 - La poésie et la couleur coexistent avec une typographie lisible et une information factuelle structurée.

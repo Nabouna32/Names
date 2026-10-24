@@ -404,3 +404,68 @@ body{font-size:16px;line-height:1.65}
 .name-card-element.element-badge-air{color:#6855a2;background:#f1edfc;border-color:#ddd4f5}
 .name-card-element.element-badge-terre{color:#39744f;background:#edf6ed;border-color:#cfe5d0}
 .name-card-element.element-badge-cosmos{color:#5752a0;background:#efefff;border-color:#d8d7fa}
+
+
+/* Genre : trois médaillons distincts, doux et lisibles, sans bleu imposé à tous. */
+.name-card-gender{flex:0 0 36px;width:36px;height:36px;border:1px solid transparent;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#e6f2ff;color:#185b9d;box-shadow:none}
+.name-card-gender svg{width:23px;height:23px;display:block}
+.name-card-gender.gender-masculin{background:#e4f1ff;color:#185b9d;border-color:#c9e2ff}
+.name-card-gender.gender-féminin{background:#fff0f4;color:#c12e68;border-color:#ffd3e0}
+.name-card-gender.gender-mixte{background:#f0eaff;color:#6b4bb7;border-color:#dcd0ff}
+@media(max-width:760px){.name-card-gender{flex-basis:33px;width:33px;height:33px}.name-card-gender svg{width:22px;height:22px}}
+
+/* Cartes prénom : bandeau illustré par élément, composition éditoriale et CTA dédié. */
+.name-grid{gap:22px;align-items:stretch}
+.name-card{padding:0;min-height:0;border-radius:18px;border:1px solid #dce5f2;background:var(--paper);box-shadow:0 8px 24px #4b6e9910;display:flex;flex-direction:column;align-items:stretch;white-space:normal}
+.name-card:before{display:none}
+.name-card:hover{transform:translateY(-4px);border-color:#c8d7ee;box-shadow:0 16px 36px #425f881c}
+.name-card-art{height:154px;flex:0 0 154px;position:relative;display:flex;align-items:flex-start;justify-content:space-between;overflow:hidden;padding:16px;border-radius:17px 17px 0 0;isolation:isolate}
+.name-card-art:before,.name-card-art:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+.name-card-art:before{opacity:.95;background:linear-gradient(180deg,#ffffff22,transparent 55%)}
+.name-card-art:after{inset:auto -8% -29px;height:54px;border-radius:50% 50% 0 0;background:var(--paper);transform:rotate(-1deg);z-index:0}
+.element-theme-eau .name-card-art{background:linear-gradient(145deg,#c5e7fb 0%,#8fc5ef 47%,#d6edfc 100%)}
+.element-theme-eau .name-card-art:before{background:linear-gradient(155deg,transparent 40%,#3e88c4aa 40.5%,#3e88c4aa 48%,transparent 48.5%),linear-gradient(20deg,transparent 36%,#eaf8ff 36.5%,#eaf8ff 44%,transparent 44.5%),linear-gradient(165deg,transparent 54%,#438ac5 54.5%,#438ac5 68%,transparent 68.5%)}
+.element-theme-feu .name-card-art{background:linear-gradient(145deg,#ffe2d7 0%,#ffb5a9 55%,#f28b8c 100%)}
+.element-theme-feu .name-card-art:before{background:radial-gradient(ellipse at 80% 75%,#e9688170 0 13%,transparent 14%),radial-gradient(ellipse at 66% 58%,#fff4d58a 0 19%,transparent 20%),radial-gradient(ellipse at 90% 42%,#ff8b9a88 0 12%,transparent 13%),linear-gradient(18deg,transparent 42%,#fff1dc8c 42.5%,#fff1dc8c 58%,transparent 58.5%)}
+.element-theme-air .name-card-art{background:linear-gradient(145deg,#e6e4ff 0%,#b8d6f4 55%,#e4f2ff 100%)}
+.element-theme-air .name-card-art:before{background:radial-gradient(ellipse at 20% 40%,#ffffffd9 0 10%,transparent 11%),radial-gradient(ellipse at 32% 30%,#ffffffc9 0 15%,transparent 16%),radial-gradient(ellipse at 77% 54%,#ffffffb8 0 12%,transparent 13%),linear-gradient(160deg,transparent 65%,#8cbce5a8 65.5%,#8cbce5a8 76%,transparent 76.5%)}
+.element-theme-terre .name-card-art{background:linear-gradient(145deg,#e0f1d9 0%,#a9d0a5 55%,#6f9f83 100%)}
+.element-theme-terre .name-card-art:before{background:radial-gradient(ellipse at 76% 66%,#4d8b6b99 0 15%,transparent 16%),radial-gradient(ellipse at 61% 50%,#f1f6d8b0 0 18%,transparent 19%),linear-gradient(155deg,transparent 48%,#5c9876a8 48.5%,#5c9876a8 66%,transparent 66.5%)}
+.element-theme-cosmos .name-card-art{background:linear-gradient(145deg,#a99ae8 0%,#7864cf 48%,#443d9d 100%)}
+.element-theme-cosmos .name-card-art:before{background-image:radial-gradient(circle at 12% 28%,#fff 0 1px,transparent 2px),radial-gradient(circle at 38% 18%,#fff9 0 1px,transparent 2px),radial-gradient(circle at 65% 32%,#fff 0 1px,transparent 2px),radial-gradient(circle at 80% 62%,#fff 0 1px,transparent 2px),radial-gradient(circle at 48% 65%,#fff9 0 1px,transparent 2px),radial-gradient(circle at 91% 19%,#fff 0 1px,transparent 2px),radial-gradient(ellipse at 50% 100%,#d7b6ff9c,transparent 60%)}
+.name-card-top{position:relative;z-index:2;display:inline-flex;align-items:center;justify-content:center;gap:8px;width:auto;min-height:38px;padding:7px 13px;border:1px solid #ffffff9c;border-radius:999px;background:#ffffffc9;backdrop-filter:blur(8px);font-size:13px;font-weight:700}
+.name-card-top .element-art-icon{font-size:17px;line-height:1}
+.element-badge-feu{color:#c74c4c}.element-badge-eau{color:#247ec1}.element-badge-air{color:#6559b7}.element-badge-terre{color:#397b58}.element-badge-cosmos{color:#5c46b0}
+.name-card-brand{width:30px;height:30px;position:relative;z-index:2;fill:none;stroke:#ffffffed;stroke-width:1.8;filter:drop-shadow(0 1px 2px #45366c55)}
+.art-stars{position:absolute;z-index:1;left:45%;top:58%;color:#ffffffb5;font-size:15px;letter-spacing:5px;pointer-events:none}
+.name-card-content{display:flex;flex:1;flex-direction:column;align-items:stretch;padding:14px 22px 22px}
+.name-card-heading{display:flex;align-items:center;gap:15px;margin:0 0 6px;max-width:100%;min-height:65px}
+.name-card-gender{width:64px;height:64px;flex:0 0 64px;border:1px solid transparent;box-shadow:none;font-size:30px}
+.name-card-gender svg{width:37px;height:37px}
+.name-card-heading .name-card-title{font:clamp(26px,2.3vw,34px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.7px;color:var(--ink)}
+.name-card-origin{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 24px 79px}
+.name-card-meaning-label{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:13px;margin:0 0 5px}
+.name-card-meaning-label svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.name-card-meaning{font-size:15px;line-height:1.65;color:var(--ink);margin-bottom:20px;overflow-wrap:anywhere}
+.name-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;margin-top:auto;padding:11px 15px;border:1.5px solid currentColor;border-radius:999px;background:transparent;font-size:13px;font-weight:600;line-height:1.3}
+.name-card-bottom svg{width:22px;height:22px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.name-card-bottom span{flex:1;text-align:center}
+.name-card-bottom b{font-size:24px;font-weight:400;line-height:1}
+.gender-cta-masculin{color:#286da9}.gender-cta-féminin{color:#c34670}.gender-cta-mixte{color:#7250b8}
+.gender-cta-masculin.name-card-bottom{border-color:#acd2f5;background:#fafdff}
+.gender-cta-féminin.name-card-bottom{border-color:#f4bfd0;background:#fffdfd}
+.gender-cta-mixte.name-card-bottom{border-color:#d0c0f7;background:#fefcff}
+.gender-legend{display:grid;grid-template-columns:minmax(220px,1.4fr) repeat(3,minmax(100px,1fr));gap:0;margin-top:30px;padding:24px 22px;border:1px solid var(--line);border-radius:18px;background:var(--paper);box-shadow:0 8px 24px #4b6e9908}
+.gender-legend-intro{align-self:center;padding:0 22px 0 4px}
+.gender-legend-intro h3{font:700 23px/1.25 Georgia,"Times New Roman",serif;margin:0 0 10px;color:var(--ink)}
+.gender-legend-intro p{font-size:14px;line-height:1.7;color:var(--muted);margin:0;max-width:370px}
+.gender-legend-item{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;border-left:1px solid var(--line);padding:0 12px}
+.gender-legend-item .name-card-gender{width:58px;height:58px;flex-basis:58px}
+.gender-legend-item strong{font:600 14px Georgia,"Times New Roman",serif;color:var(--ink)}
+.gender-legend-item>span{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}
+.legend-dot{width:9px;height:9px;border-radius:50%;display:inline-block;background:currentColor}
+@media(max-width:900px){.name-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gender-legend{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:18px}.gender-legend-intro{grid-column:1/-1;padding:0 4px 15px}.gender-legend-item:first-of-type{border-left:0}}
+@media(max-width:560px){.name-grid{grid-template-columns:1fr;gap:18px}.name-card-art{height:145px;flex-basis:145px}.name-card-content{padding:12px 18px 18px}.name-card-heading{gap:12px}.name-card-gender{width:55px;height:55px;flex-basis:55px}.name-card-gender svg{width:32px;height:32px}.name-card-origin{margin-left:67px;margin-bottom:20px}.name-card-heading .name-card-title{font-size:30px}.gender-legend{padding:20px 10px;grid-template-columns:repeat(3,minmax(0,1fr))}.gender-legend-intro h3{font-size:20px}.gender-legend-intro p{font-size:12px}.gender-legend-item{padding:0 5px}.gender-legend-item .name-card-gender{width:47px;height:47px;flex-basis:47px}.gender-legend-item .name-card-gender svg{width:28px;height:28px}.gender-legend-item strong{font-size:12px}}
+:root[data-theme="sombre"] .name-card{border-color:var(--line);box-shadow:0 8px 24px #0002}
+:root[data-theme="sombre"] .name-card-art:after{background:var(--paper)}
+:root[data-theme="sombre"] .name-card-bottom{background:transparent}
