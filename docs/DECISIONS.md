@@ -57,3 +57,7 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-018 — Pas de démonstration de fiche sur l’accueil
 **Statut : adopté.** Ne pas afficher sur l’accueil une démonstration éditoriale centrée sur un prénom précis (par exemple Benjamin et sa symbolique). L’accueil sert à rechercher et explorer ; les exemples détaillés appartiennent aux fiches prénom.
+
+
+## D-019 — Regrouper les précisions éditoriales
+**Statut : adopté.** La page « À propos » centralise la démarche de Namesia et les limites générales des contenus. Le footer reste léger. Les fiches prénom affichent une seule note informative en bas, avec l’icône Info de Lucide et un fond bleu semi-transparent. Les avertissements spécifiques indispensables, notamment l’identification explicite des statistiques fictives, restent près des données concernées.
