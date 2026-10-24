@@ -11,7 +11,7 @@
 
 ## Prototype visuel
 - Accueil avec direction artistique plus colorée et immersive.
-- Les cartes d’accueil affichent le genre à partir d’un champ explicite ; les valeurs présentes restent des données de démonstration. Un comparatif temporaire de quatre styles d’icône est présent sur l’accueil, en attente de choix.
+- Les cartes d’accueil affichent le genre à partir d’un champ explicite ; les valeurs présentes restent des données de démonstration. Les cartes ont été réorganisées : l’élément est en haut, le prénom devient le point focal et l’icône de genre est placée à côté du prénom dans un médaillon bleu circulaire.
 - Thèmes clair/sombre, recherche locale, filtres et roue interactive des éléments.
 - Cartes symboliques et fiche exploratoire pour illustrer le parcours.
 - Les contenus et associations sont des exemples de démonstration, non vérifiés.
