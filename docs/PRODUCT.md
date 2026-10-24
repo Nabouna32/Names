@@ -23,7 +23,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 ## Navigation et identité de marque
 - Le header et le footer sont des composants communs aux pages ; leurs variantes restent limitées au contexte de navigation. Les espacements entre sections et avant le footer suivent des règles responsive partagées.
 - Le footer reste léger : marque, liens d’exploration, lien « À propos » et copyright. La présentation générale et les précisions éditoriales communes sont regroupées sur la page « À propos ».
-- Sur chaque fiche prénom, afficher une seule note informative discrète en bas, avec l’icône Info de Lucide et un fond bleu semi-transparent. Éviter les disclaimers génériques répétés dans les sections.
+- Sur chaque fiche prénom, afficher une seule note informative discrète en bas, avec le symbole d’information standard ℹ et un fond bleu semi-transparent. Éviter les disclaimers génériques répétés dans les sections.
 - N’afficher des liens légaux ou de confidentialité que lorsqu’ils mènent à des informations réelles et adaptées au service ; le copyright ne remplace pas les obligations légales.
 
 ## Principes éditoriaux
