@@ -61,3 +61,7 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-019 — Regrouper les précisions éditoriales
 **Statut : adopté.** La page « À propos » centralise la démarche de Namesia et les limites générales des contenus. Le footer reste léger. Les fiches prénom affichent une seule note informative en bas, avec le symbole d’information standard ℹ et un fond bleu semi-transparent. Les avertissements spécifiques indispensables, notamment l’identification explicite des statistiques fictives, restent près des données concernées.
+
+
+## D-010 — Composition des cartes prénom
+**Statut : adopté.** Les cartes suivent la référence visuelle validée : bandeau illustré ondulé, capsule de l’élément et emblème en haut, médaillon de genre, origine, signification avec repère feuille et bouton « Voir la fiche complète » intégrant livre et flèche. Les styles de bandeau couvrent eau, feu, air, terre et cosmos. La palette de genre (bleu, rose, violet) reste indépendante de la palette élémentaire. Les illustrations CSS sont des interprétations graphiques, non des données sémantiques supplémentaires.
