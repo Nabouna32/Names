@@ -404,3 +404,12 @@ body{font-size:16px;line-height:1.65}
 .name-card-element.element-badge-air{color:#6855a2;background:#f1edfc;border-color:#ddd4f5}
 .name-card-element.element-badge-terre{color:#39744f;background:#edf6ed;border-color:#cfe5d0}
 .name-card-element.element-badge-cosmos{color:#5752a0;background:#efefff;border-color:#d8d7fa}
+
+
+/* Genre : trois médaillons distincts, doux et lisibles, sans bleu imposé à tous. */
+.name-card-gender{flex:0 0 36px;width:36px;height:36px;border:1px solid transparent;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#e6f2ff;color:#185b9d;box-shadow:none}
+.name-card-gender svg{width:23px;height:23px;display:block}
+.name-card-gender.gender-masculin{background:#e4f1ff;color:#185b9d;border-color:#c9e2ff}
+.name-card-gender.gender-féminin{background:#fff0f4;color:#c12e68;border-color:#ffd3e0}
+.name-card-gender.gender-mixte{background:#f0eaff;color:#6b4bb7;border-color:#dcd0ff}
+@media(max-width:760px){.name-card-gender{flex-basis:33px;width:33px;height:33px}.name-card-gender svg{width:22px;height:22px}}
