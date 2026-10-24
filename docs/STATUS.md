@@ -11,7 +11,7 @@
 
 ## Prototype visuel
 - Accueil avec direction artistique plus colorée et immersive.
-- Les cartes d’accueil affichent le genre à partir d’un champ explicite ; les valeurs présentes restent des données de démonstration. Les cartes ont été réorganisées : l’élément est en haut, le prénom devient le point focal et l’icône de genre est placée à côté du prénom dans un médaillon bleu circulaire.
+- Les cartes d’accueil affichent le genre à partir d’un champ explicite ; les valeurs présentes restent des données de démonstration. Les cartes ont été réorganisées : l’élément est en haut, le prénom devient le point focal et l’icône SVG de genre est placée à côté du prénom dans un médaillon bleu circulaire. Le jeu de démonstration couvre désormais les genres masculin, féminin et mixte, avec Camille comme cas mixte.
 - Thèmes clair/sombre, recherche locale, filtres et roue interactive des éléments.
 - Cartes symboliques et fiche exploratoire pour illustrer le parcours.
 - Les contenus et associations sont des exemples de démonstration, non vérifiés.
