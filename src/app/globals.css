@@ -340,7 +340,7 @@ body{font-size:16px;line-height:1.65}
 
 /* Footer partagé : identité, exploration et attribution de marque. */
 .site-footer{background:var(--footer);border-top:1px solid var(--line);padding:34px max(7%,calc((100% - 1240px)/2)) 20px;color:var(--ink)}
-.site-footer-inner{display:grid;grid-template-columns:minmax(220px,1.25fr) minmax(140px,.75fr) minmax(180px,.9fr);gap:36px;align-items:start}
+.site-footer-inner{display:grid;grid-template-columns:minmax(220px,1.25fr) minmax(180px,.9fr);gap:36px;align-items:start}
 .site-footer-brand .wordmark{display:inline-flex;font-size:28px;line-height:1.2;text-decoration:none;color:var(--ink)}
 .site-footer-brand p{max-width:310px;margin:12px 0 0;color:var(--muted);font-size:13px;line-height:1.7}
 .site-footer-nav{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
@@ -369,3 +369,20 @@ body{font-size:16px;line-height:1.65}
 @media(max-width:400px){
   .profile-hero h1.profile-name-title{font-size:clamp(48px,12.5vw,60px)}
 }
+
+
+/* Note informative unique en bas des fiches prénom. */
+.profile-disclaimer{display:flex;align-items:flex-start;gap:11px;margin:42px 0 8px;padding:16px 18px;border:1px solid rgba(59,130,246,.2);border-radius:12px;background:rgba(59,130,246,.08);color:var(--ink)}
+.profile-disclaimer svg{flex:0 0 auto;margin-top:2px;color:#3b82f6}
+.profile-disclaimer p{margin:0;font-size:13px;line-height:1.75;color:var(--muted)}
+.about-page{max-width:900px;margin:0 auto;padding:clamp(44px,7vw,84px) 28px 90px;color:var(--ink)}
+.about-page-header{max-width:700px;margin-bottom:38px}
+.about-page-kicker{margin:0 0 13px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.about-page h1{margin:0 0 18px;font:clamp(38px,6vw,58px)/1.1 Georgia,serif;letter-spacing:-1.5px}
+.about-page-lead{margin:0;color:var(--muted);font-size:18px;line-height:1.8}
+.about-page section{padding:25px 0;border-top:1px solid var(--line)}
+.about-page h2{margin:0 0 12px;font:clamp(23px,3.4vw,30px)/1.25 Georgia,serif}
+.about-page section p,.about-page section li{color:var(--muted);font-size:15px;line-height:1.85}
+.about-page section p{margin:0 0 12px}
+.about-page section ul{padding-left:22px;margin:8px 0 0}
+@media(max-width:680px){.site-footer-inner{grid-template-columns:1fr 1fr}.profile-disclaimer{margin-top:30px;padding:14px}.profile-disclaimer p{font-size:12px}.about-page{padding-inline:6%}.about-page-lead{font-size:16px}}
