@@ -29,8 +29,8 @@ Ne conserver que les décisions structurantes encore utiles.
 ## D-009 — Statistiques de popularité
 **Statut : prévu.** Chiffres clés, courbe interactive et tableau avec source/périmètre ; ne jamais inventer de chiffres INSEE.
 
-## D-010 — Git et déploiement
-**Statut : adopté.** Toute modification passe par une branche et une PR ; pas de modification directe de main. Vercel Preview est désactivé. Ne pas fusionner sans approbation explicite.
+## D-010 — Git, continuité des PR et déploiement
+**Statut : adopté.** Toute modification passe par une branche et une PR ; jamais de modification directe de `main`. Pour un même chantier, les retours et corrections s'ajoutent à la PR existante : ne pas ouvrir une nouvelle PR à chaque itération. Avant d'en créer une, rechercher les PR ouvertes et vérifier le diff réel et l'ascendance des branches afin d'éviter les doublons. Fermer les PR redondantes sans les fusionner lorsqu'une seule PR cohérente contient déjà tout le travail. Aucune fusion ni activation de l'auto-merge sans approbation explicite de l'utilisateur au moment de la fusion. Vercel Preview est désactivé pour limiter le quota de déploiements.
 
 ## D-011 — Challenge avant implémentation
 **Statut : règle de travail adoptée.** Repartir du besoin, comparer les options utiles et valider les choix structurels sans surcharger la discussion.
@@ -49,3 +49,15 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-016 — Un seul intitulé par section de l’accueil
 **Statut : essai visuel à valider.** Remplacer le duo « label + grand titre » par un seul intitulé explicite, en conservant le style éditorial des labels. Utiliser un vrai titre HTML (`h2`) plus lisible que le micro-label d’origine pour préserver la hiérarchie sémantique et l’accessibilité. Le titre principal du hero reste distinct ; les petits labels internes aux cartes ne sont pas concernés. Réévaluer après inspection du rendu desktop et mobile.
+
+
+## D-017 — Accueil fonctionnel, pas vitrine
+**Statut : adopté.** L’accueil sert d’abord à rechercher et explorer les prénoms. Ne pas y ajouter de blocs qui présentent le produit, détaillent le contenu d’une fiche ou annoncent des fonctionnalités à venir ; ces informations ont leur place dans les fiches ou les pages dédiées. Chaque section de l’accueil doit justifier sa place par une action ou un usage direct.
+
+
+## D-018 — Pas de démonstration de fiche sur l’accueil
+**Statut : adopté.** Ne pas afficher sur l’accueil une démonstration éditoriale centrée sur un prénom précis (par exemple Benjamin et sa symbolique). L’accueil sert à rechercher et explorer ; les exemples détaillés appartiennent aux fiches prénom.
+
+
+## D-019 — Regrouper les précisions éditoriales
+**Statut : adopté.** La page « À propos » centralise la démarche de Namesia et les limites générales des contenus. Le footer reste léger. Les fiches prénom affichent une seule note informative en bas, avec le symbole d’information standard ℹ et un fond bleu semi-transparent. Les avertissements spécifiques indispensables, notamment l’identification explicite des statistiques fictives, restent près des données concernées.

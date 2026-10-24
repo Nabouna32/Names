@@ -21,14 +21,14 @@ Le challenge transversal est obligatoire : considérer produit, UX, modèle édi
 - Rester sobre et adapter le format à la demande et au contexte.
 
 ## Git et pull requests
-- **Ne jamais modifier directement `main`.** Toute modification passe par une branche dédiée et une pull request (PR) vers `main`.
-- Créer une branche courte et descriptive pour chaque unité de changement cohérente.
-- La PR explique le problème, la proposition retenue, les alternatives ou compromis importants, les fichiers touchés et les vérifications effectuées.
-- Examiner le diff et les contrôles avant fusion. Ne pas contourner une protection de branche ni fusionner avec des contrôles requis en échec.
-- Après chaque changement pertinent, exécuter `npm run lint`, `npm run typecheck`, `npm run build` et les tests disponibles ; inspecter les logs et corriger tout échec.
-- **Fusion :** terminer et regrouper le périmètre cohérent de la PR, puis relire le diff complet et vérifier les contrôles avant de décider de fusionner. L'auto-merge n'est pas activé par défaut ; il n'est envisageable pour une PR à faible risque qu'après approbation explicite de l'utilisateur et si GitHub impose réellement les contrôles requis. Pour les changements structurels, de données, de sécurité, de secrets ou de déploiement, demander une décision humaine explicite au moment de la fusion. Ne pas fusionner si un contrôle requis échoue ou si les protections ne sont pas confirmées.
-- Ne pas laisser une PR validée inutilement ouverte si l'utilisateur a autorisé sa fusion. Si une permission, une protection, un conflit ou un contrôle bloque l'opération, expliquer le blocage sans le contourner.
-- Ne jamais prétendre qu'un test, une revue ou un déploiement a réussi sans résultat observé.
+- **Ne jamais modifier directement `main`.** Toute modification passe par une branche et une PR vers `main`.
+- **Continuer la PR existante pour un même chantier.** Pour les retours, corrections et ajustements qui appartiennent au même périmètre, pousser de nouveaux commits sur la branche de la PR déjà ouverte. Ne pas créer une nouvelle branche/PR à chaque demande.
+- Avant de créer une PR, rechercher les PR ouvertes et comparer la branche de travail à `main`. Vérifier l'ascendance et le diff réel pour éviter les PR en doublon ou les changements déjà inclus dans une autre PR.
+- Ne fermer, rouvrir ou remplacer une PR que si cela résout un vrai problème de périmètre ou de base ; si plusieurs PR couvrent le même travail, conserver une seule PR cohérente et fermer les doublons sans les fusionner.
+- La PR explique le problème, la proposition retenue, les compromis importants, les fichiers touchés et les vérifications effectuées.
+- Après chaque changement pertinent, exécuter `npm run lint`, `npm run typecheck`, `npm run build` et les tests disponibles ; inspecter les logs et corriger tout échec. Ne jamais annoncer un contrôle réussi sans résultat observé.
+- **Aucune fusion sans approbation explicite de l'utilisateur pour cette fusion.** Une demande de modification, de mise à jour de documentation ou de préparation d'une PR n'est pas une autorisation de fusion. Ne pas activer l'auto-merge ni fusionner implicitement après les contrôles ; demander l'accord au moment où la PR est prête, puis vérifier le diff complet, les contrôles requis et les protections. Ne jamais contourner un blocage.
+- Si un contrôle, une permission, une protection ou un conflit bloque la fusion, expliquer le blocage sans le contourner.
 
 ## Documentation canonique
 La documentation fait partie du produit et doit évoluer avec le code, dans la même PR :
