@@ -1,6 +1,6 @@
 # État du projet
 
-**Mis à jour :** 2026-10-23.
+**Mis à jour :** 2026-10-24.
 
 ## Socle
 - Next.js App Router, React, TypeScript strict ; Node.js 24+.
@@ -11,6 +11,7 @@
 
 ## Prototype visuel
 - Accueil avec direction artistique plus colorée et immersive.
+- Les cartes d’accueil affichent le genre à partir d’un champ explicite ; les valeurs présentes restent des données de démonstration.
 - Thèmes clair/sombre, recherche locale, filtres et roue interactive des éléments.
 - Cartes symboliques et fiche exploratoire pour illustrer le parcours.
 - Les contenus et associations sont des exemples de démonstration, non vérifiés.
