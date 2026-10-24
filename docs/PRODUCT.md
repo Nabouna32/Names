@@ -9,7 +9,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 
 ## Expérience
 - Explorer les prénoms par recherche, prénoms apparentés et roue des éléments symboliques (feu, eau, air, terre, cosmos).
-- Sur les cartes de l’accueil, afficher le genre via un symbole masculin/féminin explicite, fondé sur une donnée déclarée ; ne jamais le déduire automatiquement du prénom. Les valeurs actuelles sont des exemples de démonstration.
+- Sur les cartes de l’accueil, afficher le genre à partir d’une donnée déclarée ; ne jamais le déduire automatiquement du prénom. Une comparaison temporaire de quatre styles visuels est ajoutée à l’accueil pour choisir le traitement définitif.
 - Découvrir une fiche organisée en panneaux éditoriaux cohérents, avec des repères visuels/emoji pour les sections culturelles et un univers symbolique illustré par des vignettes colorées.
 - Naviguer entre variantes et formes apparentées par des pastilles cliquables.
 - Ne pas exposer dans l’interface les libellés internes de conception (« fiche prénom », « maquette », « en construction »). Expliquer les limites des données avec des formulations éditoriales claires, sans présenter des contenus non vérifiés comme des faits établis.
