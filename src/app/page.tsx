@@ -19,7 +19,7 @@ const symbols=[{emoji:"🌅",label:"Le moment",title:"L'heure dorée",text:"Benj
 function GenderIcon({gender}:{gender:GenderKey}) {
   const label=gender==="masculin"?"Genre masculin":gender==="féminin"?"Genre féminin":"Genre mixte";
   return <span className={"name-card-gender gender-"+gender} role="img" aria-label={label} title={gender==="masculin"?"Masculin":gender==="féminin"?"Féminin":"Mixte"}>
-    {gender==="mixte" ? <svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="10" cy="19" r="5.5"/><path d="M14 15 22 7m-6 0h6v6M10 24.5v5m-3-2.5h6"/><circle cx="22" cy="21" r="5.5"/><path d="M22 26.5v5m-3-2.5h6"/></svg> :
+    {gender==="mixte" ? <svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="15" cy="17" r="7"/><path d="m20 12 7-7m-5 0h5v5M15 24v6m-4-3h8"/></svg> :
       gender==="masculin" ? <svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="20" r="7"/><path d="m17 15 9-9m-7 0h7v7"/></svg> :
       <svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="16" cy="11" r="7"/><path d="M16 18v12m-5-5h10"/></svg>}
   </span>;
