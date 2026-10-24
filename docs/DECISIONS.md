@@ -18,7 +18,7 @@ Ne conserver que les décisions structurantes encore utiles.
 **Statut : direction produit adoptée.** Viser un équilibre approximatif entre histoire/faits culturels et symbolisme poétique. Le site n'est pas un assistant IA.
 
 ## D-006 — Direction visuelle immersive et éditoriale
-**Statut : direction visuelle adoptée, à affiner par retours.** Palette irisée, vignettes colorées, emojis comme repères, roue des éléments et thèmes clair/sombre. Les fiches utilisent des panneaux arrondis cohérents sans encadrer chaque paragraphe. L’interface publique évite les libellés de brouillon et communique les limites des données avec des formulations éditoriales précises. Sur les cartes d’accueil, le genre repose sur un champ explicite, jamais sur une déduction. Le traitement visuel des icônes reste à valider via un comparatif temporaire de quatre variantes.
+**Statut : direction visuelle adoptée, à affiner par retours.** Palette irisée, vignettes colorées, emojis comme repères, roue des éléments et thèmes clair/sombre. Les fiches utilisent des panneaux arrondis cohérents sans encadrer chaque paragraphe. L’interface publique évite les libellés de brouillon et communique les limites des données avec des formulations éditoriales précises. Sur les cartes d’accueil, le genre repose sur un champ explicite, jamais sur une déduction. Le traitement retenu est un médaillon bleu circulaire placé à côté du prénom : l’élément reste en haut de la carte et le genre reste secondaire.
 
 ## D-007 — Symbolisme et roue des éléments
 **Statut : concept adopté, associations à éditer.** Les symboles sont des interprétations créatives personnalisées ; les éléments sont une taxonomie de découverte, pas des vérités objectives.
