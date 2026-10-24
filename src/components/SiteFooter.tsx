@@ -10,7 +10,7 @@ export default function SiteFooter() {
           <Link className="wordmark" href="/" aria-label="Namesia — accueil">
             namesia<span aria-hidden="true">✳</span>
           </Link>
-          </div>
+        </div>
         <nav className="site-footer-nav" aria-label="Explorer Namesia">
           <p className="site-footer-heading">Explorer</p>
           <Link href="/#decouvrir">Tous les prénoms</Link>
