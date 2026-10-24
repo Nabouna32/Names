@@ -16,7 +16,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 - Présenter les statistiques INSEE avec chiffres clés, courbe interactive et tableau consultable lorsque les données sont intégrées.
 - Proposer un thème clair et un thème sombre réellement travaillés, avec lisibilité, responsive et accessibilité ; conserver un contraste suffisant sur les vignettes colorées dans les deux thèmes.
 - Préserver une ambiance chaleureuse, immersive, colorée et poétique : Namesia ne doit pas ressembler à une encyclopédie austère.
-- Sur l’accueil, privilégier un seul intitulé explicite par grande section plutôt que le duo redondant « label + grand titre » ; conserver une hiérarchie de vrais titres accessible et suffisamment lisible.
+- L’accueil est un point d’entrée fonctionnel, pas une vitrine de présentation du produit : privilégier la recherche, l’exploration et l’accès aux prénoms. Éviter les blocs qui décrivent le contenu du site ou annoncent des fonctionnalités à venir ; placer les détails dans les fiches ou les pages dédiées.
 - Sur les fiches prénom, utiliser Dancing Script pour le prénom principal, en appliquant explicitement sa famille CSS afin qu’elle ne soit pas écrasée par la règle générique des titres ; garder les autres titres et contenus dans la typographie de lecture.
 - Placer le fil d’Ariane dans le bloc de présentation du prénom, avec une icône maison SVG et des séparateurs discrets. Garder uniquement les ancres dans une barre sticky opaque, avec des pastilles colorées, un état actif bien visible et des cibles tactiles confortables ; la barre reste dans les limites de la fiche et ne recouvre pas le footer.
 
