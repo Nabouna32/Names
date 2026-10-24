@@ -49,3 +49,7 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-016 — Un seul intitulé par section de l’accueil
 **Statut : essai visuel à valider.** Remplacer le duo « label + grand titre » par un seul intitulé explicite, en conservant le style éditorial des labels. Utiliser un vrai titre HTML (`h2`) plus lisible que le micro-label d’origine pour préserver la hiérarchie sémantique et l’accessibilité. Le titre principal du hero reste distinct ; les petits labels internes aux cartes ne sont pas concernés. Réévaluer après inspection du rendu desktop et mobile.
+
+
+## D-017 — Accueil fonctionnel, pas vitrine
+**Statut : adopté.** L’accueil sert d’abord à rechercher et explorer les prénoms. Ne pas y ajouter de blocs qui présentent le produit, détaillent le contenu d’une fiche ou annoncent des fonctionnalités à venir ; ces informations ont leur place dans les fiches ou les pages dédiées. Chaque section de l’accueil doit justifier sa place par une action ou un usage direct.
