@@ -65,3 +65,7 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-010 — Composition des cartes prénom
 **Statut : adopté.** Les cartes suivent la référence visuelle validée : bandeau illustré ondulé, capsule de l’élément et emblème en haut, médaillon de genre, origine, signification avec repère feuille et bouton « Voir la fiche complète » intégrant livre et flèche. Les styles de bandeau couvrent eau, feu, air, terre et cosmos. La palette de genre (bleu, rose, violet) reste indépendante de la palette élémentaire. Les illustrations CSS sont des interprétations graphiques, non des données sémantiques supplémentaires.
+
+
+## D-020 — Illustrations propres aux éléments
+**Statut : adopté, à valider visuellement.** Les cartes utilisent des dessins SVG distincts pour Eau, Feu, Air, Terre et Cosmos, une découpe asymétrique et un emblème spécifique à chaque élément. Les SVG sont des illustrations vectorielles intégrées au code ; ils ne doivent pas être décrits comme des photographies ou des images bitmap.
