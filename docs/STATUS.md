@@ -45,3 +45,9 @@
 2. Définir le modèle de contenu, les sources, variantes, symboles et personnalités.
 3. Préparer la migration Supabase et les données officielles.
 4. Remplacer progressivement les contenus de démonstration par des contenus éditoriaux vérifiés.
+
+
+## Cartes de prénoms
+- La composition de référence est intégrée au code de l’accueil : bandeaux illustrés par élément (eau, feu, air, terre et cosmos), capsule avec icône et nom de l’élément, emblème en haut à droite, médaillon de genre, origine, signification avec icône de feuille et CTA « Voir la fiche complète » avec livre et flèche.
+- La légende des trois genres est affichée sous la grille. Les associations élémentaires des prénoms de démonstration restent illustratives ; les cinq thèmes visuels sont disponibles.
+- Les vérifications de lint, TypeScript, build et CI restent à confirmer après cette modification.
