@@ -29,8 +29,8 @@ Ne conserver que les décisions structurantes encore utiles.
 ## D-009 — Statistiques de popularité
 **Statut : prévu.** Chiffres clés, courbe interactive et tableau avec source/périmètre ; ne jamais inventer de chiffres INSEE.
 
-## D-010 — Git et déploiement
-**Statut : adopté.** Toute modification passe par une branche et une PR ; pas de modification directe de main. Vercel Preview est désactivé. Ne pas fusionner sans approbation explicite.
+## D-010 — Git, continuité des PR et déploiement
+**Statut : adopté.** Toute modification passe par une branche et une PR ; jamais de modification directe de `main`. Pour un même chantier, les retours et corrections s'ajoutent à la PR existante : ne pas ouvrir une nouvelle PR à chaque itération. Avant d'en créer une, rechercher les PR ouvertes et vérifier le diff réel et l'ascendance des branches afin d'éviter les doublons. Fermer les PR redondantes sans les fusionner lorsqu'une seule PR cohérente contient déjà tout le travail. Aucune fusion ni activation de l'auto-merge sans approbation explicite de l'utilisateur au moment de la fusion. Vercel Preview est désactivé pour limiter le quota de déploiements.
 
 ## D-011 — Challenge avant implémentation
 **Statut : règle de travail adoptée.** Repartir du besoin, comparer les options utiles et valider les choix structurels sans surcharger la discussion.
