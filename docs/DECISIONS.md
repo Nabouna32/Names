@@ -46,3 +46,6 @@ Ne conserver que les décisions structurantes encore utiles.
 
 ## D-015 — Conventions communes de mise en page
 **Statut : adopté.** Le layout racine rend le header global et le footer. Sur les fiches prénom, le fil d’Ariane se trouve dans le bloc de présentation ; une barre sticky opaque distincte contient uniquement les ancres, stylisées en pastilles, avec état actif, défilement mobile et décalage des sections. La barre reste limitée à la fiche pour ne pas couvrir le footer ; aucune dépendance UI n’est nécessaire.
+
+## D-016 — Un seul intitulé par section de l’accueil
+**Statut : essai visuel à valider.** Remplacer le duo « label + grand titre » par un seul intitulé explicite, en conservant le style éditorial des labels. Utiliser un vrai titre HTML (`h2`) plus lisible que le micro-label d’origine pour préserver la hiérarchie sémantique et l’accessibilité. Le titre principal du hero reste distinct ; les petits labels internes aux cartes ne sont pas concernés. Réévaluer après inspection du rendu desktop et mobile.
