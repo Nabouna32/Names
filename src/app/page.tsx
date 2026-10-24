@@ -28,8 +28,7 @@ return <main className="site-shell">
 <section className="section-wrap discover-section" id="decouvrir"><div className="section-heading"><div><h2 className="section-label-heading"><span aria-hidden="true">🔎</span> TOUS LES PRÉNOMS</h2></div><p className="heading-side">Recherchez par prénom ou par origine.</p></div>
 <label className="search-box"><span className="search-icon">⌕</span><input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Chercher un prénom, une origine…" aria-label="Rechercher un prénom ou une origine"/>{query&&<button className="clear-search" onClick={()=>setQuery("")} aria-label="Effacer la recherche">×</button>}<span className="search-key">RECHERCHER</span></label>
 <div className="filter-bar"><div className="filter-chips"><button className={"filter-chip"+(active==="tout"?" active":"")} onClick={()=>setActive("tout")}>Tous les prénoms</button>{elements.map(e=><button key={e.id} className={"filter-chip"+(active===e.id?" active":"")} onClick={()=>setActive(e.id)}>{e.emoji} {e.label}</button>)}</div><span className="result-count">{results.length} prénom{results.length>1?"s":""}</span></div>
-{results.length?<div className="name-grid">{results.map(n=><button key={n.name} className={"name-card tone-"+n.color} onClick={()=>setSelected(n)}><span className="name-card-top"><span className="name-card-gender" aria-label={n.gender==="masculin"?"Genre masculin":n.gender==="féminin"?"Genre féminin":"Genre mixte"} title={n.gender==="masculin"?"Masculin":n.gender==="féminin"?"Féminin":"Mixte"}>{n.gender==="masculin"?"♂":n.gender==="féminin"?"♀":"♀♂"}</span><span className="name-card-element">{elements.find(e=>e.id===n.element)?.label}</span></span><span className="name-card-title">{n.name}</span><span className="name-card-origin">{n.origin}</span><span className="name-card-meaning">{n.meaning}</span><span className="name-card-bottom">Explorer ce prénom <b>↗</b></span></button>)}</div>
-<div className="gender-style-comparison" aria-labelledby="gender-style-heading">
+{results.length ? <><div className="name-grid">{results.map(n=><button key={n.name} className={"name-card tone-"+n.color} onClick={()=>setSelected(n)}><span className="name-card-top"><span className="name-card-gender" aria-label={n.gender==="masculin"?"Genre masculin":n.gender==="féminin"?"Genre féminin":"Genre mixte"} title={n.gender==="masculin"?"Masculin":n.gender==="féminin"?"Féminin":"Mixte"}>{n.gender==="masculin"?"♂":n.gender==="féminin"?"♀":"♀♂"}</span><span className="name-card-element">{elements.find(e=>e.id===n.element)?.label}</span></span><span className="name-card-title">{n.name}</span><span className="name-card-origin">{n.origin}</span><span className="name-card-meaning">{n.meaning}</span><span className="name-card-bottom">Explorer ce prénom <b>↗</b></span></button>)}</div><div className="gender-style-comparison" aria-labelledby="gender-style-heading">
   <div className="gender-style-intro">
     <h3 id="gender-style-heading">Comparaison des styles d’icône</h3>
     <p>Quatre versions de la même carte, seul le traitement du genre change. Choisis celle qui s’intègre le mieux à Namesia.</p>
@@ -51,8 +50,7 @@ return <main className="site-shell">
       </article>
     ))}
   </div>
-</div>
-<div className="empty-state"><span>🔭</span><h3>Aucun prénom trouvé</h3><p>Essayez une autre recherche ou affichez tous les prénoms.</p><button onClick={()=>{setQuery("");setActive("tout");}}>Revenir à tous les prénoms</button></div>}
+</div></> : <div className="empty-state"><span>🔭</span><h3>Aucun prénom trouvé</h3><p>Essayez une autre recherche ou affichez tous les prénoms.</p><button onClick={()=>{setQuery("");setActive("tout");}}>Revenir à tous les prénoms</button></div>}
 </section>
 
 
