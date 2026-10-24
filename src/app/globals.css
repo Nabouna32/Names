@@ -386,3 +386,20 @@ body{font-size:16px;line-height:1.65}
 .about-page section p{margin:0 0 12px}
 .about-page section ul{padding-left:22px;margin:8px 0 0}
 @media(max-width:680px){.site-footer-inner{grid-template-columns:1fr 1fr}.profile-disclaimer{margin-top:30px;padding:14px}.profile-disclaimer p{font-size:12px}.about-page{padding-inline:6%}.about-page-lead{font-size:16px}}
+
+/* Comparatif temporaire des styles d’icône de genre — à retirer après validation. */
+.gender-style-comparison{margin-top:42px;padding-top:28px;border-top:1px solid var(--line)}
+.gender-style-intro{margin-bottom:18px}
+.gender-style-intro h3{font:27px Georgia,serif;margin:0 0 7px}
+.gender-style-intro p{font-size:13px;line-height:1.7;color:var(--muted);margin:0;max-width:650px}
+.gender-style-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.gender-preview-card{position:relative;isolation:isolate;overflow:hidden;text-align:left;min-height:235px;padding:23px;border:1px solid var(--line);border-radius:12px;background:var(--paper);display:flex;flex-direction:column;align-items:flex-start}
+.gender-style-number{position:absolute;top:13px;right:15px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.gender-preview-card .name-card-top{margin-top:20px}
+.gender-preview-card .name-card-gender{background:#e8f0ff;color:#245bb5;border:1px solid #bfd4ff}
+.gender-style-1 .name-card-gender{border-radius:50%;background:#367de8;color:#fff;border:0;box-shadow:0 4px 12px #367de833}
+.gender-style-2 .name-card-gender{border-radius:13px;background:#dce9ff;color:#245bb5;border:1px solid #b8d0ff;box-shadow:inset 0 1px #fff}
+.gender-style-3 .name-card-gender{border-radius:10px;background:linear-gradient(145deg,#f3e6ff,#dce9ff);color:#6740ad;border:1px solid #d8c6f5}
+.gender-style-3 .name-card-gender svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}
+.gender-style-4 .name-card-gender{border-radius:9px;background:transparent;color:#2465ce;border:2px solid #75a5f5;font-size:30px;font-weight:700}
+@media(max-width:680px){.gender-style-grid{grid-template-columns:1fr}.gender-style-intro h3{font-size:24px}.gender-preview-card{min-height:220px}}
