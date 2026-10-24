@@ -469,3 +469,12 @@ body{font-size:16px;line-height:1.65}
 :root[data-theme="sombre"] .name-card{border-color:var(--line);box-shadow:0 8px 24px #0002}
 :root[data-theme="sombre"] .name-card-art:after{background:var(--paper)}
 :root[data-theme="sombre"] .name-card-bottom{background:transparent}
+
+/* Illustrations vectorielles détaillées et emblème propre à chaque élément. */
+.name-card-art{height:154px;flex:0 0 154px;position:relative;display:flex;align-items:flex-start;justify-content:space-between;overflow:hidden;padding:16px;border-radius:17px 17px 0 0;isolation:isolate;background:#d9e7f6}
+.name-card-art:before,.name-card-art:after{display:none}
+.name-card-artwork{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
+.name-card-top{z-index:2}
+.name-card-brand{width:32px;height:32px;position:relative;z-index:2;display:block;color:#fff;fill:none;stroke:#fff;filter:drop-shadow(0 1px 2px #31234d44)}
+.name-card-brand path{vector-effect:non-scaling-stroke}
+@media(max-width:560px){.name-card-art{height:145px;flex-basis:145px}}

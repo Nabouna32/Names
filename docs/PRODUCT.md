@@ -9,7 +9,7 @@ L'IA peut aider à préparer le contenu en coulisses ; Namesia n'est pas un assi
 
 ## Expérience
 - Explorer les prénoms par recherche, prénoms apparentés et roue des éléments symboliques (feu, eau, air, terre, cosmos).
-- Sur les cartes de l’accueil, reprendre la composition de référence : bandeau illustré et ondulé, capsule d’élément avec icône à gauche, emblème de marque à droite, médaillon de genre, prénom, origine, bloc « Signification » et bouton « Voir la fiche complète » avec livre à gauche et flèche à droite. Le bandeau varie selon les cinq éléments (eau, feu, air, terre, cosmos) ; le genre conserve sa palette indépendante (bleu masculin, rose féminin, violet mixte).
+- Sur les cartes de l’accueil, utiliser des illustrations vectorielles distinctes et reconnaissables pour chaque élément, une séparation inférieure organique asymétrique, une capsule d’élément et un emblème propre à l’élément en haut à droite, puis médaillon de genre, prénom, origine, signification et bouton livre + flèche. Le bandeau varie selon les cinq éléments (eau, feu, air, terre, cosmos) ; le genre conserve sa palette indépendante (bleu masculin, rose féminin, violet mixte).
 - Découvrir une fiche organisée en panneaux éditoriaux cohérents, avec des repères visuels/emoji pour les sections culturelles et un univers symbolique illustré par des vignettes colorées.
 - Naviguer entre variantes et formes apparentées par des pastilles cliquables.
 - Ne pas exposer dans l’interface les libellés internes de conception (« fiche prénom », « maquette », « en construction »). Expliquer les limites des données avec des formulations éditoriales claires, sans présenter des contenus non vérifiés comme des faits établis.

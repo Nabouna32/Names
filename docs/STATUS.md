@@ -51,3 +51,8 @@
 - La composition de référence est intégrée au code de l’accueil : bandeaux illustrés par élément (eau, feu, air, terre et cosmos), capsule avec icône et nom de l’élément, emblème en haut à droite, médaillon de genre, origine, signification avec icône de feuille et CTA « Voir la fiche complète » avec livre et flèche.
 - La légende des trois genres est affichée sous la grille. Les associations élémentaires des prénoms de démonstration restent illustratives ; les cinq thèmes visuels sont disponibles.
 - Les vérifications de lint, TypeScript, build et CI restent à confirmer après cette modification.
+
+
+## Illustrations des cartes
+- Les illustrations vectorielles ont été détaillées pour différencier les paysages Eau, Feu, Air, Terre et Cosmos. La bordure inférieure est une courbe asymétrique partagée ; l’emblème supérieur droit est désormais spécifique à chaque élément.
+- Les visuels sont des SVG dessinés dans l’interface, pas des photographies ni des fichiers bitmap externes. La vérification visuelle en navigateur reste à faire.
