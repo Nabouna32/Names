@@ -373,7 +373,7 @@ body{font-size:16px;line-height:1.65}
 
 /* Note informative unique en bas des fiches prénom. */
 .profile-disclaimer{display:flex;align-items:flex-start;gap:11px;margin:42px 0 8px;padding:16px 18px;border:1px solid rgba(59,130,246,.2);border-radius:12px;background:rgba(59,130,246,.08);color:var(--ink)}
-.profile-disclaimer svg{flex:0 0 auto;margin-top:2px;color:#3b82f6}
+.profile-disclaimer-icon{flex:0 0 auto;margin-top:1px;color:#3b82f6;font-size:21px;line-height:1.2}
 .profile-disclaimer p{margin:0;font-size:13px;line-height:1.75;color:var(--muted)}
 .about-page{max-width:900px;margin:0 auto;padding:clamp(44px,7vw,84px) 28px 90px;color:var(--ink)}
 .about-page-header{max-width:700px;margin-bottom:38px}
